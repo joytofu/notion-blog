@@ -13,7 +13,20 @@ export default function PostHero({ post, siteInfo }) {
   const { locale, fullWidth } = useGlobal()
 
   if (!post) {
-    return <></>
+    return (
+      <div id='header' className='w-full h-96 relative md:flex-shrink-0 z-10'>
+        <LazyImage
+        priority={true}
+        src={'/images/buddha.jpeg'}
+        className='w-full h-full object-cover object-center absolute top-0'
+      />
+        <header
+        id='article-header-cover'
+        className='bg-black bg-opacity-70 absolute top-0 w-full h-96 py-10 flex justify-center items-center '>
+        </header>
+      </div>
+    )
+    // return <></>
   }
 
   // 文章全屏隐藏标头
@@ -21,15 +34,15 @@ export default function PostHero({ post, siteInfo }) {
     return <div className='my-8' />
   }
 
-  const headerImage = post?.pageCover ? post.pageCover : siteInfo?.pageCover
+  /* const headerImage = post?.pageCover ? post.pageCover : siteInfo?.pageCover */
 
   return (
     <div id='header' className='w-full h-96 relative md:flex-shrink-0 z-10'>
-      <LazyImage
+      {/* <LazyImage
         priority={true}
         src={headerImage}
         className='w-full h-full object-cover object-center absolute top-0'
-      />
+      /> */}
 
       <header
         id='article-header-cover'

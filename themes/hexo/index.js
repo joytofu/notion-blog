@@ -4,7 +4,7 @@ import NotionPage from '@/components/NotionPage'
 import ShareBar from '@/components/ShareBar'
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
-import { isBrowser } from '@/lib/utils'
+import { isBrowser, isMobile } from '@/lib/utils'
 import { Transition } from '@headlessui/react'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
@@ -33,6 +33,7 @@ import TocDrawer from './components/TocDrawer'
 import TocDrawerButton from './components/TocDrawerButton'
 import CONFIG from './config'
 import { Style } from './style'
+import Image from 'next/image'
 
 const AlgoliaSearchModal = dynamic(
   () => import('@/components/AlgoliaSearchModal'),
@@ -55,12 +56,25 @@ const LayoutBase = props => {
   const router = useRouter()
   const showRandomButton = siteConfig('HEXO_MENU_RANDOM', false, CONFIG)
 
-  const headerSlot = post ? (
+  /* const headerSlot = post ? (
     <PostHero {...props} />
   ) : router.route === '/' &&
     siteConfig('HEXO_HOME_BANNER_ENABLE', null, CONFIG) ? (
     <Hero {...props} />
-  ) : null
+  ) : null */
+
+  /* const headerSlot = router.route === '/' &&
+  siteConfig('HEXO_HOME_BANNER_ENABLE', null, CONFIG) ? (
+  <Hero {...props} />
+) : <PostHero {...props} /> */
+  let headerSlot = null
+  if (router.route === '/'){
+    headerSlot = <Hero {...props} />
+  }else{
+    headerSlot = <PostHero {...props} />
+  }
+
+
 
   const drawerRight = useRef(null)
   const tocRef = isBrowser ? document.getElementById('article-wrapper') : null
@@ -84,6 +98,7 @@ const LayoutBase = props => {
 
   // Algolia搜索框
   const searchModal = useRef(null)
+  const sideRightContent = !isMobile()? <SideRight {...props} /> : null
 
   return (
     <ThemeGlobalHexo.Provider value={{ searchModal }}>
@@ -94,9 +109,10 @@ const LayoutBase = props => {
 
         {/* 顶部导航 */}
         <Header {...props} />
+        {headerSlot}
 
         {/* 顶部嵌入 */}
-        <Transition
+        {/* <Transition
           show={!onLoading}
           appear={true}
           enter='transition ease-in-out duration-700 transform order-first'
@@ -106,8 +122,7 @@ const LayoutBase = props => {
           leaveFrom='opacity-100'
           leaveTo='opacity-0 translate-y-16'
           unmount={false}>
-          {headerSlot}
-        </Transition>
+        </Transition> */}
 
         {/* 主区块 */}
         <main
@@ -136,12 +151,20 @@ const LayoutBase = props => {
                 {/* 主区上部嵌入 */}
                 {slotTop}
 
+                {/* <a href="https://www.dpbolvw.net/ce106iqzwqyDFEFGLFELJDFFLNHLHL" target="_blank" rel="noreferrer nofollow">
+                  <Image src="/images/interserver-3.gif" alt="interserver VPS | web hosting | dedicated server" border="0" width={0} height={0} layout='responsive' style={{ width: '80%', height: 'auto' }}/>
+                </a> */}
+
                 {children}
+                
+                {/* <a href="https://www.jdoqocy.com/9n121zw41w3JLKLMRLKRPJLLRTNRMR" target="_blank" rel="noreferrer nofollow">
+                  <Image src="/images/interserver-4.gif" alt="interserver VPS | web hosting | dedicated server" border="0" width={0} height={0} layout='responsive' style={{ width: '80%', height: 'auto' }}/>
+                </a> */}
               </Transition>
             </div>
 
             {/* 右侧栏 */}
-            <SideRight {...props} />
+            {sideRightContent}
           </div>
         </main>
 
