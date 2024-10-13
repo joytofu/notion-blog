@@ -1,8 +1,8 @@
 import Live2D from '@/components/Live2D'
-// import { siteConfig } from '@/lib/config'
+import { siteConfig } from '@/lib/config'
 // import { useGlobal } from '@/lib/global'
 import dynamic from 'next/dynamic'
-// import CONFIG from '../config'
+import CONFIG from '../config'
 // import { AnalyticsCard } from './AnalyticsCard'
 // import Announcement from './Announcement'
 import Card from './Card'
@@ -40,7 +40,7 @@ export default function SideRight(props) {
     // latestPosts,
     // tags,
     // currentTag,
-    // showCategory,
+     showCategory,
     // showTag,
     rightAreaSlot,
     // notice,
