@@ -17,7 +17,7 @@ export default function PostHero({ post, siteInfo }) {
       <div id='header' className='w-full h-96 relative md:flex-shrink-0 z-10'>
         <LazyImage
         priority={true}
-        src={'/images/buddha.jpeg'}
+        src={'/images/schoolroom.jpeg'}
         className='w-full h-full object-cover object-center absolute top-0'
       />
         <header
