@@ -10,7 +10,7 @@ import { useEffect } from 'react'
  * @param {*} param0
  * @returns
  */
-const GlobalHead = props => {
+const SEO = props => {
   const { children, siteInfo, post, NOTION_CONFIG } = props
   let url = siteConfig('PATH')?.length
     ? `${siteConfig('LINK')}/${siteConfig('SUB_PATH', '')}`
@@ -18,6 +18,32 @@ const GlobalHead = props => {
   let image
   const router = useRouter()
   const meta = getSEOMeta(props, router, useGlobal()?.locale)
+  const webFontUrl = siteConfig('FONT_URL')
+
+  useEffect(() => {
+    // 使用WebFontLoader字体加载
+    loadExternalResource(
+      'https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js',
+      'js'
+    ).then(url => {
+      const WebFont = window?.WebFont
+      if (WebFont) {
+        // console.log('LoadWebFont', webFontUrl)
+        WebFont.load({
+          custom: {
+            // families: ['"LXGW WenKai"'],
+            urls: webFontUrl
+          }
+        })
+      }
+    })
+  }, [])
+
+  // SEO关键词
+  let keywords = meta?.tags || siteConfig('KEYWORDS')
+  if (post?.tags && post?.tags?.length > 0) {
+    keywords = post?.tags?.join(',')
+  }
   if (meta) {
     url = `${url}/${meta.slug}`
     image = meta.image || '/bg_image.jpg'
@@ -28,7 +54,6 @@ const GlobalHead = props => {
   const lang = siteConfig('LANG').replace('-', '_') // Facebook OpenGraph 要 zh_CN 這樣的格式才抓得到語言
   const category = meta?.category || siteConfig('KEYWORDS') // section 主要是像是 category 這樣的分類，Facebook 用這個來抓連結的分類
   const favicon = siteConfig('BLOG_FAVICON')
-  const webFontUrl = siteConfig('FONT_URL')
   const BACKGROUND_DARK = siteConfig('BACKGROUND_DARK', '', NOTION_CONFIG)
 
   const SEO_BAIDU_SITE_VERIFICATION = siteConfig(
@@ -68,33 +93,6 @@ const GlobalHead = props => {
   )
 
   const FACEBOOK_PAGE = siteConfig('FACEBOOK_PAGE', null, NOTION_CONFIG)
-  // SEO关键词
-  let keywords = meta?.tags || siteConfig('KEYWORDS')
-  if (post?.tags && post?.tags?.length > 0) {
-    keywords = post?.tags?.join(',')
-  }
-
-  // monetag广告
-  // const AD_MONETAG_TOGGLE = siteConfig('AD_MONETAG_TOGGLE')
-
-  useEffect(() => {
-    // 使用WebFontLoader字体加载
-    loadExternalResource(
-      'https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js',
-      'js'
-    ).then(url => {
-      const WebFont = window?.WebFont
-      if (WebFont) {
-        console.log('LoadWebFont', webFontUrl)
-        WebFont.load({
-          custom: {
-            // families: ['"LXGW WenKai"'],
-            urls: webFontUrl
-          }
-        })
-      }
-    })
-  }, [])
 
   return (
     <Head>
@@ -161,10 +159,6 @@ const GlobalHead = props => {
           <meta property='article:publisher' content={FACEBOOK_PAGE} />
         </>
       )}
-
-      {<meta name='impact-site-verification' value='0625b0ea-1a8e-4374-a566-f26772678722' />}
-      
-
       {children}
     </Head>
   )
@@ -178,46 +172,44 @@ const GlobalHead = props => {
 const getSEOMeta = (props, router, locale) => {
   const { post, siteInfo, tag, category, page } = props
   const keyword = router?.query?.s
-  const siteTitle = siteConfig('TITLE')
-  const siteDesc = siteConfig('DESCRIPTION')
 
   switch (router.route) {
     case '/':
       return {
-        title: `${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${siteInfo?.title} | ${siteInfo?.description}`,
+        description: `${siteInfo?.description}`,
         image: `${siteInfo?.pageCover}`,
         slug: '',
         type: 'website'
       }
     case '/archive':
       return {
-        title: `${locale.NAV.ARCHIVE} | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${locale.NAV.ARCHIVE} | ${siteInfo?.title}`,
+        description: `${siteInfo?.description}`,
         image: `${siteInfo?.pageCover}`,
         slug: 'archive',
         type: 'website'
       }
     case '/page/[page]':
       return {
-        title: `${page} | Page | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${page} | Page | ${siteInfo?.title}`,
+        description: `${siteInfo?.description}`,
         image: `${siteInfo?.pageCover}`,
         slug: 'page/' + page,
         type: 'website'
       }
     case '/category/[category]':
       return {
-        title: `${category} | ${locale.COMMON.CATEGORY} | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${category} | ${locale.COMMON.CATEGORY} | ${siteInfo?.title}`,
+        description: `${siteInfo?.description}`,
         slug: 'category/' + category,
         image: `${siteInfo?.pageCover}`,
         type: 'website'
       }
     case '/category/[category]/page/[page]':
       return {
-        title: `${category} | ${locale.COMMON.CATEGORY} | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${category} | ${locale.COMMON.CATEGORY} | ${siteInfo?.title}`,
+        description: `${siteInfo?.description}`,
         slug: 'category/' + category,
         image: `${siteInfo?.pageCover}`,
         type: 'website'
@@ -225,16 +217,16 @@ const getSEOMeta = (props, router, locale) => {
     case '/tag/[tag]':
     case '/tag/[tag]/page/[page]':
       return {
-        title: `${tag} | ${locale.COMMON.TAGS} | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${tag} | ${locale.COMMON.TAGS} | ${siteInfo?.title}`,
+        description: `${siteInfo?.description}`,
         image: `${siteInfo?.pageCover}`,
         slug: 'tag/' + tag,
         type: 'website'
       }
     case '/search':
       return {
-        title: `${keyword || ''}${keyword ? ' | ' : ''}${locale.NAV.SEARCH} | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${keyword || ''}${keyword ? ' | ' : ''}${locale.NAV.SEARCH} | ${siteInfo?.title}`,
+        description: `${siteInfo?.description}`,
         image: `${siteInfo?.pageCover}`,
         slug: 'search',
         type: 'website'
@@ -242,29 +234,29 @@ const getSEOMeta = (props, router, locale) => {
     case '/search/[keyword]':
     case '/search/[keyword]/page/[page]':
       return {
-        title: `${keyword || ''}${keyword ? ' | ' : ''}${locale.NAV.SEARCH} | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${keyword || ''}${keyword ? ' | ' : ''}${locale.NAV.SEARCH} | ${siteInfo?.title}`,
+        description: siteConfig('TITLE'),
         image: `${siteInfo?.pageCover}`,
         slug: 'search/' + (keyword || ''),
         type: 'website'
       }
     case '/404':
       return {
-        title: `${siteTitle} | Not Found`,
+        title: `${siteInfo?.title} | 页面找不到啦`,
         image: `${siteInfo?.pageCover}`
       }
     case '/tag':
       return {
-        title: `${locale.COMMON.TAGS} | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${locale.COMMON.TAGS} | ${siteInfo?.title}`,
+        description: `${siteInfo?.description}`,
         image: `${siteInfo?.pageCover}`,
         slug: 'tag',
         type: 'website'
       }
     case '/category':
       return {
-        title: `${locale.COMMON.CATEGORY} | ${siteTitle}`,
-        description: `${siteDesc}`,
+        title: `${locale.COMMON.CATEGORY} | ${siteInfo?.title}`,
+        description: `${siteInfo?.description}`,
         image: `${siteInfo?.pageCover}`,
         slug: 'category',
         type: 'website'
@@ -273,7 +265,7 @@ const getSEOMeta = (props, router, locale) => {
       return {
         title: post
           ? `${post?.title} | ${siteInfo?.title}`
-          : `${siteTitle} | loading`,
+          : `${siteInfo?.title} | loading`,
         description: post?.summary,
         type: post?.type,
         slug: post?.slug,
@@ -284,4 +276,4 @@ const getSEOMeta = (props, router, locale) => {
   }
 }
 
-export default GlobalHead
+export default SEO
