@@ -111,7 +111,7 @@ const LayoutIndex = props => {
 
       {/* 最新文章区块 */}
       <PostSimpleListHorizontal
-        title='最新文章'
+        title='Latest Articles'
         href='/archive'
         posts={newPosts}
       />
@@ -170,7 +170,7 @@ const LayoutSlug = props => {
           )
           if (!article) {
             router.push('/404').then(() => {
-              console.warn('找不到页面', router.asPath)
+              console.warn('Not found', router.asPath)
             })
           }
         }
