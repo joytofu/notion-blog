@@ -1,7 +1,7 @@
 const CONFIG = {
   // 首屏信息栏按钮文字
-  MAGZINE_HOME_BANNER_ENABLE: true, // 首屏右上角的宣传位
-  MAGZINE_HOME_BUTTON: true,
+  MAGZINE_HOME_BANNER_ENABLE: false, // 首屏右上角的宣传位
+  MAGZINE_HOME_BUTTON: false,
   MAGZINE_HOME_BUTTON_URL: '/about',
   MAGZINE_HOME_BUTTON_TEXT: '了解更多',
 
@@ -38,7 +38,7 @@ const CONFIG = {
 
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
-    {
+    /* {
       name: '友情链接',
       menus: [
         {
@@ -101,7 +101,7 @@ const CONFIG = {
         { title: '建站工具', href: 'https://www.tangly1024.com/' },
         { title: 'NotionNext', href: 'https://docs.tangly1024.com/about' }
       ]
-    }
+    } */
   ],
 
   // 旧版本顶部菜单
