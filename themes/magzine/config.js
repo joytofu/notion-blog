@@ -14,19 +14,19 @@ const CONFIG = {
   // 首页底部推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   MAGZINE_RECOMMEND_POST_TAG: '',
   MAGZINE_RECOMMEND_POST_COUNT: 6,
-  MAGZINE_RECOMMEND_POST_TITLE: '推荐文章',
+  MAGZINE_RECOMMEND_POST_TITLE: 'Featured',
   MAGZINE_RECOMMEND_POST_SORT_BY_UPDATE_TIME: true, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
 
   // Style
   MAGZINE_RIGHT_PANEL_DARK: process.env.NEXT_PUBLIC_MAGZINE_RIGHT_DARK || false, // 右侧面板深色模式
 
   MAGZINE_POST_LIST_COVER: true, // 文章列表显示图片封面
-  MAGZINE_POST_LIST_PREVIEW: true, // 列表显示文章预览
+  MAGZINE_POST_LIST_PREVIEW: false, // 列表显示文章预览
   MAGZINE_POST_LIST_CATEGORY: true, // 列表显示文章分类
-  MAGZINE_POST_LIST_TAG: true, // 列表显示文章标签
+  MAGZINE_POST_LIST_TAG: false, // 列表显示文章标签
 
   MAGZINE_POST_DETAIL_CATEGORY: true, // 文章显示分类
-  MAGZINE_POST_DETAIL_TAG: true, // 文章显示标签
+  MAGZINE_POST_DETAIL_TAG: false, // 文章显示标签
 
   // 文章页面联系卡
   MAGZINE_SOCIAL_CARD: false, // 是否显示右侧，点击加入社群按钮
