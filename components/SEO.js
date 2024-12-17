@@ -130,6 +130,8 @@ const SEO = props => {
       <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
 
+      <meta name="google-adsense-account" content="ca-pub-9192211072764171"></meta>
+
       <link rel='icon' href={BLOG_FAVICON} />
 
       {COMMENT_WEBMENTION_ENABLE && (
