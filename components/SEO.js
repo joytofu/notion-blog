@@ -160,6 +160,7 @@ const SEO = props => {
         </>
       )}
       {children}
+      <meta name="google-adsense-account" content="ca-pub-6059088246786213"></meta>
     </Head>
   )
 }
