@@ -134,6 +134,13 @@ const SEO = props => {
       <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
 
+      {IMPACT_SITE_VERIFICATION && (
+        <meta
+          name='impact-site-verification'
+          content={IMPACT_SITE_VERIFICATION}
+        />
+      )}
+
       <link rel='icon' href={BLOG_FAVICON} />
 
       {COMMENT_WEBMENTION_ENABLE && (
