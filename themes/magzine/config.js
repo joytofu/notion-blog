@@ -38,6 +38,19 @@ const CONFIG = {
 
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
+    {
+      name: 'Quick Links',
+      menus: [
+        {
+          title: 'About Us',
+          href: 'https://learninglonglife.com/about-us'
+        },
+        {
+          title: 'Privacy Policy',
+          href: 'https://learninglonglife.com/privacy-policy'
+        }
+      ]
+    },
     /* {
       name: '友情链接',
       menus: [
