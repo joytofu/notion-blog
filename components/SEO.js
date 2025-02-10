@@ -71,6 +71,12 @@ const SEO = props => {
     NOTION_CONFIG
   )
 
+  const IMPACT_SITE_VERIFICATION = siteConfig(
+    'IMPACT_SITE_VERIFICATION',
+    null,
+    NOTION_CONFIG
+  )
+
   const BLOG_FAVICON = siteConfig('BLOG_FAVICON', null, NOTION_CONFIG)
 
   const COMMENT_WEBMENTION_ENABLE = siteConfig(

@@ -65,7 +65,11 @@ const BLOG = {
     'Mastering the Art of Self-Improvement: Your Guide to Lifelong Learning',
 
   // uuid重定向至 slug
-  UUID_REDIRECT: process.env.UUID_REDIRECT || false
+  UUID_REDIRECT: process.env.UUID_REDIRECT || false,
+
+  //impact verification
+  IMPACT_SITE_VERIFICATION:
+    process.env.NEXT_PUBLIC_IMPACT_SITE_VERIFICATION || '',
 }
 
 module.exports = BLOG
