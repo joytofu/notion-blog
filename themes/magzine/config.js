@@ -7,9 +7,9 @@ const CONFIG = {
 
   MAGZINE_HOME_HIDDEN_CATEGORY: '分享杂文', //不希望在首页展示的文章分类，用英文逗号隔开
 
-  MAGZINE_HOME_TITLE: 'Learning Long Life',
+  MAGZINE_HOME_TITLE: 'Sapkr',
   MAGZINE_HOME_DESCRIPTION:
-    'Mastering the Art of Self-Improvement: Your Guide to Lifelong Learning',
+    'Sapkr: Your destination for unique finds in design, fashion, entertainment, and more.',
   MAGZINE_HOME_TIPS: '',  
 
   // 首页底部推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
@@ -34,7 +34,7 @@ const CONFIG = {
   MAGZINE_SOCIAL_CARD_TITLE_1: '交流频道',
   MAGZINE_SOCIAL_CARD_TITLE_2: '加入社群讨论分享',
   MAGZINE_SOCIAL_CARD_TITLE_3: '点击加入社群',
-  MAGZINE_SOCIAL_CARD_URL: 'https://docs.tangly1024.com/article/chat-community',
+  MAGZINE_SOCIAL_CARD_URL: '',
 
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
@@ -43,11 +43,11 @@ const CONFIG = {
       menus: [
         {
           title: 'About Us',
-          href: 'https://learninglonglife.com/about-us'
+          href: 'https://sapkr.com/about-us'
         },
         {
           title: 'Privacy Policy',
-          href: 'https://learninglonglife.com/privacy-policy'
+          href: 'https://sapkr.com/privacy-policy'
         }
       ]
     },
