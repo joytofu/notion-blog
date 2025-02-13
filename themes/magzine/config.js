@@ -9,12 +9,12 @@ const CONFIG = {
 
   MAGZINE_HOME_TITLE: 'Sapkr',
   MAGZINE_HOME_DESCRIPTION:
-    'Sapkr: Your destination for unique finds in design, fashion, entertainment, and more.',
+    '',
   MAGZINE_HOME_TIPS: '',  
 
   // 首页底部推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   MAGZINE_RECOMMEND_POST_TAG: '',
-  MAGZINE_RECOMMEND_POST_COUNT: 6,
+  MAGZINE_RECOMMEND_POST_COUNT: 4,
   MAGZINE_RECOMMEND_POST_TITLE: 'Featured',
   MAGZINE_RECOMMEND_POST_SORT_BY_UPDATE_TIME: true, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
 
