@@ -140,6 +140,8 @@ const SEO = props => {
       <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
 
+      <meta name="google-adsense-account" content="ca-pub-9192211072764171" />
+
       {IMPACT_SITE_VERIFICATION && (
         <meta
           name='impact-site-verification'
