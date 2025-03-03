@@ -39,15 +39,15 @@ const CONFIG = {
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
     {
-      name: 'Quick Links',
+      name: '快速链接',
       menus: [
         {
-          title: 'About Us',
-          href: 'https://sapkr.com/about-us'
+          title: '关于我们',
+          href: 'https://sapzr.com/about-us'
         },
         {
-          title: 'Privacy Policy',
-          href: 'https://sapkr.com/privacy-policy'
+          title: '隐私政策',
+          href: 'https://sapzr.com/privacy-policy'
         }
       ]
     },
