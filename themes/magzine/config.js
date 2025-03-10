@@ -51,6 +51,47 @@ const CONFIG = {
         }
       ]
     },
+    {
+      name: 'Category',
+      menus: [
+        {
+          title: 'Design',
+          href: 'https://sapkr.com/category/Design'
+        },
+        {
+          title: 'Fashion',
+          href: 'https://sapkr.com/category/Fashion'
+        },
+        {
+          title: 'Art',
+          href: 'https://sapkr.com/category/Art'
+        },
+        {
+          title: 'Crafts',
+          href: 'https://sapkr.com/category/Crafts'
+        },
+        {
+          title: 'Architecture',
+          href: 'https://sapkr.com/category/Architecture'
+        },
+        {
+          title: 'Animals',
+          href: 'https://sapkr.com/category/Animals'
+        },
+        {
+          title: 'Home Decor',
+          href: 'https://sapkr.com/category/home-decor'
+        },
+        {
+          title: 'Beauty',
+          href: 'https://sapkr.com/category/Beauty'
+        },
+        {
+          title: 'DIY',
+          href: 'https://sapkr.com/category/DIY'
+        },
+      ]
+    }
     /* {
       name: '友情链接',
       menus: [
