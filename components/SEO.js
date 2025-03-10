@@ -140,6 +140,8 @@ const SEO = props => {
       <meta name='twitter:description' content={description} />
       <meta name='twitter:title' content={title} />
 
+      <meta name="p:domain_verify" content="1b06a0b9391fc0ef0d6b26de8a843370"/>
+
       {IMPACT_SITE_VERIFICATION && (
         <meta
           name='impact-site-verification'
