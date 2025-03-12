@@ -2,12 +2,12 @@ const CONFIG = {
   // 首屏信息栏按钮文字
   MAGZINE_HOME_BANNER_ENABLE: false, // 首屏右上角的宣传位
   MAGZINE_HOME_BUTTON: false,
-  MAGZINE_HOME_BUTTON_URL: '/about',
+  MAGZINE_HOME_BUTTON_URL: '/',
   MAGZINE_HOME_BUTTON_TEXT: 'Dig Deeper',
 
   MAGZINE_HOME_HIDDEN_CATEGORY: '分享杂文', //不希望在首页展示的文章分类，用英文逗号隔开
 
-  MAGZINE_HOME_TITLE: 'Sapkr',
+  MAGZINE_HOME_TITLE: 'GoxTN',
   MAGZINE_HOME_DESCRIPTION:
     '',
   MAGZINE_HOME_TIPS: '',  
@@ -15,7 +15,7 @@ const CONFIG = {
   // 首页底部推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   MAGZINE_RECOMMEND_POST_TAG: '',
   MAGZINE_RECOMMEND_POST_COUNT: 4,
-  MAGZINE_RECOMMEND_POST_TITLE: 'Featured',
+  MAGZINE_RECOMMEND_POST_TITLE: '推荐',
   MAGZINE_RECOMMEND_POST_SORT_BY_UPDATE_TIME: true, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
 
   // Style
@@ -39,16 +39,12 @@ const CONFIG = {
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
     {
-      name: 'Quick Links',
+      name: '快速链接',
       menus: [
         {
-          title: 'About Us',
-          href: 'https://sapkr.com/about-us'
+          title: '关于我们',
+          href: 'https://goxtn.com/about-us'
         },
-        {
-          title: 'Privacy Policy',
-          href: 'https://sapkr.com/privacy-policy'
-        }
       ]
     },
     /* {
@@ -120,7 +116,7 @@ const CONFIG = {
   // 旧版本顶部菜单
   MAGZINE_MENU_CATEGORY: true, // 显示分类
   MAGZINE_MENU_TAG: true, // 显示标签
-  MAGZINE_MENU_ARCHIVE: true, // 显示归档
+  MAGZINE_MENU_ARCHIVE: false, // 显示归档
   MAGZINE_MENU_SEARCH: true, // 显示搜索
 
   MAGZINE_WIDGET_TO_TOP: true // 跳回顶部
