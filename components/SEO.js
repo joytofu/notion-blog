@@ -3,6 +3,7 @@ import { useGlobal } from '@/lib/global'
 import { loadExternalResource } from '@/lib/utils'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
+import Script from 'next/script'
 import { useEffect } from 'react'
 
 /**
@@ -178,6 +179,11 @@ const SEO = props => {
           <meta property='article:publisher' content={FACEBOOK_PAGE} />
         </>
       )}
+
+
+      {<script id="hydro_config" type="text/javascript">{`window.Hydro_tagId = "873a91aa-fdf9-4758-9d52-4a98c7afc736";`}</script>}
+      {<script id="hydro_script" src="https://track.hydro.online/"></script>}
+    
       {children}
     </Head>
   )
