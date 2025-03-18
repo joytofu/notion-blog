@@ -180,10 +180,7 @@ const SEO = props => {
         </>
       )}
 
-      <script id="hydro_config" type="text/javascript">
-        window.Hydro_tagId="873a91aa-fdf9-4758-9d52-4a98c7afc736";
-      </script>
-      <script id="hydro_script" src="https://track.hydro.online/"></script>
+      
       
     
       {children}
