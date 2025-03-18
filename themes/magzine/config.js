@@ -48,6 +48,14 @@ const CONFIG = {
         {
           title: 'Privacy Policy',
           href: 'https://sapkr.com/privacy-policy'
+        },
+        {
+          title: 'Cookie Policy',
+          href: 'https://sapkr.com/cookie-policy'
+        },
+        {
+          title: 'Policy Statement',
+          href: 'https://sapkr.com/cookie-policy'
         }
       ]
     },
