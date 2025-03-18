@@ -1,9 +1,9 @@
 import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
 import { loadExternalResource } from '@/lib/utils'
+/* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import Script from 'next/script'
 import { useEffect } from 'react'
 
 /**
@@ -180,11 +180,14 @@ const SEO = props => {
         </>
       )}
 
-
-      {<script id="hydro_config" type="text/javascript">{`window.Hydro_tagId = "873a91aa-fdf9-4758-9d52-4a98c7afc736";`}</script>}
-      {<script id="hydro_script" src="https://track.hydro.online/"></script>}
+      <script id="hydro_config" type="text/javascript">
+        window.Hydro_tagId="873a91aa-fdf9-4758-9d52-4a98c7afc736";
+      </script>
+      <script id="hydro_script" src="https://track.hydro.online/"></script>
+      
     
       {children}
+      
     </Head>
   )
 }
