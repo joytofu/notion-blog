@@ -183,6 +183,9 @@ const LayoutSlug = props => {
       <div className='w-full mx-auto max-w-screen-3xl'>
 
 
+      {/* ADDS广告 */}
+      <div id="frame" style={{width: '100%'}}><iframe data-aa='2387082' src='//acceptable.a-ads.com/2387082' style={{width: '100%', height: '90px', border:'0px', padding: 0, overflow: 'hidden', backgroundColor: 'transparent'}}></iframe><a style={{display: 'block', textAlign: 'right', fontSize: '12px'}} id="frame-link" href="https://aads.com/campaigns/new/?source_id=2387082&source_type=ad_unit&partner=2387082">Advertise here</a></div>
+
         {/* 广告位 */}
         <WWAds orientation='horizontal' />
 
@@ -229,8 +232,6 @@ const LayoutSlug = props => {
                       <Comment frontMatter={post} />
                     </section>
 
-                    {/* ADDS广告 */}
-      <div id="frame" style={{width: '970px'}}><iframe data-aa='2387082' src='//ad.a-ads.com/2387082?size=728x90' style={{width: '728px', height: '90px', border:'0px', padding: 0, overflow: 'hidden', backgroundColor: 'transparent'}}></iframe><a style={{display: 'block', textAlign: 'right', fontSize: '12px'}} id="frame-link" href="https://aads.com/campaigns/new/?source_id=2387082&source_type=ad_unit&partner=2387082">Advertise here</a></div>
                   </article>
 
                   <div className='lg:col-span-1 flex flex-col justify-between px-2 lg:px-0 space-y-2 lg:space-y-0'>
