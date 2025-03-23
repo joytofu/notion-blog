@@ -181,7 +181,7 @@ const SEO = props => {
         </>
       )}
 
-      {/* (
+      (
           <>
             <script 
               id="hydro_config"
@@ -195,7 +195,7 @@ const SEO = props => {
             />
             <script id="hydro_script" src="https://track.hydro.online/" async />
           </>
-      ) */}
+      )
       
     
       {children}
