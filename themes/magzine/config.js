@@ -55,7 +55,7 @@ const CONFIG = {
         },
         {
           title: 'Policy Statement',
-          href: 'https://sapkr.com/cookie-policy'
+          href: 'https://sapkr.com/privacy-statement-us'
         }
       ]
     },
