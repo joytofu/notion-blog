@@ -183,8 +183,12 @@ const LayoutSlug = props => {
       <div className='w-full mx-auto max-w-screen-3xl'>
 
 
-      {/* ADDS广告 */}
-      <div id="frame" style={{width: '100%'}}><iframe data-aa='2387082' src='//acceptable.a-ads.com/2387082' style={{width: '100%', height: '90px', border:'0px', padding: 0, overflow: 'hidden', backgroundColor: 'transparent'}}></iframe><a style={{display: 'block', textAlign: 'right', fontSize: '12px'}} id="frame-link" href="https://aads.com/campaigns/new/?source_id=2387082&source_type=ad_unit&partner=2387082">Advertise here</a></div>
+      {/* ezoic广告 */}
+      <div id="ezoic-pub-ad-placeholder-115"></div>
+      <div id="ezoic-pub-ad-placeholder-114"></div>
+      <div id="ezoic-pub-ad-placeholder-113"></div>
+      <div id="ezoic-pub-ad-placeholder-112"></div>
+      
 
         {/* 广告位 */}
         <WWAds orientation='horizontal' />

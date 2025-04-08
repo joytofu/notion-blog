@@ -181,6 +181,7 @@ const SEO = props => {
         </>
       )}
 
+      {/* Hydro Ads */}
       (
           <>
             <script 
@@ -197,8 +198,36 @@ const SEO = props => {
           </>
       )
       
+      {/* ezoic Ads */}
+      (
+        <>
+          <script 
+            src="https://cmp.gatekeeperconsent.com/min.js" 
+            data-cfasync="false"
+          />
+          <script 
+            src="https://the.gatekeeperconsent.com/cmp.min.js" 
+            data-cfasync="false"
+          />
+          <script async src="//www.ezojs.com/ezoic/sa.min.js" />
+          <script 
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.ezstandalone = window.ezstandalone || {};
+                ezstandalone.cmd = ezstandalone.cmd || [];
+                ezstandalone.cmd.push(function() {
+                  ezstandalone.showAds()
+                });
+              `
+            }}
+          />
+          
+        </>
+      )
     
       {children}
+
+      
       
     </Head>
   )
