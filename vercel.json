@@ -1,5 +1,10 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": []
+  "headers": [],
+  "redirects": [
+    {
+      "source": "/ads.txt", "destination": "https://srv.adstxtmanager.com/19390/sapkr.com", "permanent": true
+    }
+  ]
 }
