@@ -184,11 +184,6 @@ const LayoutSlug = props => {
 
 
       {/* ezoic广告 */}
-      <div id="ezoic-pub-ad-placeholder-115"></div>
-      <div id="ezoic-pub-ad-placeholder-114"></div>
-      <div id="ezoic-pub-ad-placeholder-113"></div>
-      <div id="ezoic-pub-ad-placeholder-112"></div>
-      
 
         {/* 广告位 */}
         <WWAds orientation='horizontal' />
