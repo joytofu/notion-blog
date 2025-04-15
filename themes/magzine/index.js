@@ -38,6 +38,8 @@ import TagItemMini from './components/TagItemMini'
 import TouchMeCard from './components/TouchMeCard'
 import CONFIG from './config'
 import { Style } from './style'
+import Card from './components/Card'
+import Image from 'next/image'
 
 // 主题全局状态
 const ThemeGlobalMagzine = createContext()
@@ -186,7 +188,7 @@ const LayoutSlug = props => {
       {/* ezoic广告 */}
 
         {/* 广告位 */}
-        <WWAds orientation='horizontal' />
+        <WWAds orientation='vertical' />
 
         {/* 文章锁 */}
         {lock && <ArticleLock validPassword={validPassword} />}
@@ -201,11 +203,19 @@ const LayoutSlug = props => {
                 {/* 文章区块分为三列 */}
                 <div className='grid grid-cols-1 lg:grid-cols-5 gap-8 py-12'>
                   <div className='h-full lg:col-span-1 hidden lg:block'>
-                    <Catalog
+                    {/* <Catalog
                       post={post}
                       toc={post?.toc || []}
                       className='sticky top-20'
-                    />
+                    /> */}
+
+                      <Card className='sticky top-20'>
+                            <a href="https://sittercity.s4lle7.net/kOg9dV" target='_blank' rel='nofollow'>
+                              <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
+                            </a>
+                        </Card>
+
+
                   </div>
 
                   {/* Notion文章主体 */}
@@ -249,8 +259,11 @@ const LayoutSlug = props => {
                           <i className='mr-1 fas fa-fire' />
                           <span className='busuanzi_value_page_pv' />
                         </div>
-                      </div>
+                      </div>              
                     </section>
+
+                    {/* 自定义广告 */}
+                    
 
                     {/* 最新文章区块 */}
                     <div>
