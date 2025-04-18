@@ -69,7 +69,7 @@ const BLOG = {
 
   //impact verification
   IMPACT_SITE_VERIFICATION:
-    process.env.NEXT_PUBLIC_IMPACT_SITE_VERIFICATION || '',
+    process.env.NEXT_PUBLIC_IMPACT_SITE_VERIFICATION || '85cec4d8-9b11-4867-996d-970ccdb18c84',
 }
 
 module.exports = BLOG

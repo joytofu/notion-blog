@@ -106,7 +106,9 @@ const nextConfig = {
       'source.unsplash.com',
       'p1.qhimg.com',
       'webmention.io',
-      'ko-fi.com'
+      'ko-fi.com',
+      'sittercity.s4lle7.net',
+      'imp.pxf.io'
     ]
   },
 

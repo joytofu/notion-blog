@@ -201,7 +201,9 @@ const LayoutSlug = props => {
                 <ArticleInfo {...props} />
 
                 {/* 文章区块分为三列 */}
+
                 <div className='grid grid-cols-1 lg:grid-cols-5 gap-8 py-12'>
+                  {/* 左栏 */}
                   <div className='h-full lg:col-span-1 hidden lg:block'>
                     {/* <Catalog
                       post={post}
@@ -210,9 +212,9 @@ const LayoutSlug = props => {
                     /> */}
 
                       <Card className='sticky top-20'>
-                            <a href="https://sittercity.s4lle7.net/kOg9dV" target='_blank' rel='nofollow'>
+                            <a rel="sponsored" href="https://sittercity.s4lle7.net/c/5128239/2071327/3017" target="_blank" id="2071327">
                               <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
-                            </a>
+                            </a>                           
                         </Card>
 
 
@@ -243,14 +245,22 @@ const LayoutSlug = props => {
 
                   </article>
 
+                  {/* 右栏 */}
                   <div className='lg:col-span-1 flex flex-col justify-between px-2 lg:px-0 space-y-2 lg:space-y-0'>
+                    {/* 自定义广告 */}
+                    <Card className='sticky top-20'>
+                          <a rel="sponsored" href="https://puzzleio.pxf.io/c/5128239/2057134/25342" target="_blank" id="2057134">
+                            <Image src="/images/puzzle.io-1080x1080.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto' }}/>
+                          </a>                           
+                    </Card> 
+
                     {/* meta信息 */}
-                    <section className='text-lg gap-y-6 text-center lg:text-left'>
+                    {/* <section className='text-lg gap-y-6 text-center lg:text-left'>
                       <div className='text-gray-500 py-1 dark:text-gray-600 '>
-                        {/* <div className='whitespace-nowrap'>
-          <i className='far fa-calendar mr-2' />
-          {post?.publishDay}
-        </div> */}
+                        <div className='whitespace-nowrap'>
+                          <i className='far fa-calendar mr-2' />
+                          {post?.publishDay}
+                        </div>
                         <div className='whitespace-nowrap mr-2'>
                           <i className='far fa-calendar-check mr-2' />
                           {post?.lastEditedDay}
@@ -259,16 +269,14 @@ const LayoutSlug = props => {
                           <i className='mr-1 fas fa-fire' />
                           <span className='busuanzi_value_page_pv' />
                         </div>
-                      </div>              
-                    </section>
-
-                    {/* 自定义广告 */}
-                    
+                      </div>             
+                    </section> */}
+             
 
                     {/* 最新文章区块 */}
-                    <div>
+                    {/* <div>
                       <PostGroupLatest {...props} vertical={true} />
-                    </div>
+                    </div> */}
 
                     {/* Adsense */}
                     <div>
@@ -279,9 +287,9 @@ const LayoutSlug = props => {
                     <div></div>
 
                     {/* 文章分类区块 */}
-                    <div>
+                    {/* <div>
                       <CategoryGroup {...props} />
-                    </div>
+                    </div> */}
 
                     <div>
                       <TouchMeCard />
