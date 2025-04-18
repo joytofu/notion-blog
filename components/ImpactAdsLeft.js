@@ -13,15 +13,6 @@ const ImpactAdsLeft = (props) =>{
         return <></>
     }
 
-    if (post.category === 'Crafts'){
-        return (
-            <Card className='sticky top-20'>
-                <Link rel="sponsored" href="https://funwhole.sjv.io/c/5128239/1503597/17189" target="_blank" id="1503597">
-                    <Image src="/images/funwhole-station-1000x1000.jpeg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
-                </Link> 
-            </Card>
-        )
-    }
 
     if (post.category === 'home-decor'){
         return (
