@@ -40,6 +40,8 @@ import CONFIG from './config'
 import { Style } from './style'
 import Card from './components/Card'
 import Image from 'next/image'
+import ImpactAdsRight from '@/components/ImpactAdsRight'
+import ImpactAdsLeft from '@/components/ImpactAdsLeft'
 
 // 主题全局状态
 const ThemeGlobalMagzine = createContext()
@@ -211,12 +213,12 @@ const LayoutSlug = props => {
                       className='sticky top-20'
                     /> */}
 
-                      <Card className='sticky top-20'>
+                      {/* <Card className='sticky top-20'>
                             <a rel="sponsored" href="https://sittercity.s4lle7.net/c/5128239/2071327/3017" target="_blank" id="2071327">
                               <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
                             </a>                           
-                        </Card>
-
+                        </Card> */}
+                        <ImpactAdsLeft {...props} />
 
                   </div>
 
@@ -248,11 +250,14 @@ const LayoutSlug = props => {
                   {/* 右栏 */}
                   <div className='lg:col-span-1 flex flex-col justify-between px-2 lg:px-0 space-y-2 lg:space-y-0'>
                     {/* 自定义广告 */}
-                    <Card className='sticky top-20'>
+                    {/* <Card className='sticky top-20'>
                           <a rel="sponsored" href="https://puzzleio.pxf.io/c/5128239/2057134/25342" target="_blank" id="2057134">
                             <Image src="/images/puzzle.io-1080x1080.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto' }}/>
                           </a>                           
-                    </Card> 
+                    </Card>  */}
+                    <ImpactAdsRight {...props} />
+
+
 
                     {/* meta信息 */}
                     {/* <section className='text-lg gap-y-6 text-center lg:text-left'>
