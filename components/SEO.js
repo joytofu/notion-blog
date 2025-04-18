@@ -187,14 +187,13 @@ const SEO = props => {
             <script 
               id="hydro_config"
               type="text/javascript"
-              strategy="afterInteractive"
               dangerouslySetInnerHTML={{
                 __html: `
                   window.Hydro_tagId = "873a91aa-fdf9-4758-9d52-4a98c7afc736";
                 `
               }}
             />
-            <script id="hydro_script" src="https://track.hydro.online/" async />
+            <script id="hydro_script" src="https://track.hydro.online/" />
           </>
       )
     
