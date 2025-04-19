@@ -210,15 +210,15 @@ const SEO = props => {
           <script async src="https://adsdk.microsoft.com/mmnow/sdk.js?siteId=365749&publisherId=254037100" crossorigin="anonymous"></script>
         </>
       )
-    
-      {children}
 
-      
+      {/* <!-- Bidvertiser2099407 --> */}
+      <meta name='bidvertiser' content='<!-- Bidvertiser2099407 -->'></meta> 
+          
+      {children}
       
     </Head>
   )
 }
-
 /**
  * 获取SEO信息
  * @param {*} props
