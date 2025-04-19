@@ -196,6 +196,20 @@ const SEO = props => {
             <script id="hydro_script" src="https://track.hydro.online/" />
           </>
       )
+
+      {/* Microsoft Monetize */}
+      (
+        <>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.msAdsQueue = window.msAdsQueue || [];
+              `
+            }}
+          />
+          <script async src="https://adsdk.microsoft.com/mmnow/sdk.js?siteId=365749&publisherId=254037100" crossorigin="anonymous"></script>
+        </>
+      )
     
       {children}
 
