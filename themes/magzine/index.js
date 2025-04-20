@@ -189,6 +189,21 @@ const LayoutSlug = props => {
 
         {/* 广告位 */}
         <WWAds orientation='vertical' />
+     
+        <script 
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+                atOptions = {
+            'key' : '97ba2013d6be0e3903a65b4c72378c7d',
+            'format' : 'iframe',
+            'height' : 90,
+            'width' : 728,
+            'params' : {}
+          };
+              `
+            }}
+        />
 
         {/* 文章锁 */}
         {lock && <ArticleLock validPassword={validPassword} />}
