@@ -42,6 +42,7 @@ import Card from './components/Card'
 import Image from 'next/image'
 import ImpactAdsRight from '@/components/ImpactAdsRight'
 import ImpactAdsLeft from '@/components/ImpactAdsLeft'
+import AdContainer from './components/AdContainer'
 
 // 主题全局状态
 const ThemeGlobalMagzine = createContext()
@@ -215,8 +216,7 @@ const LayoutSlug = props => {
                               <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
                             </a>                           
                         </Card> */}
-                        <ImpactAdsLeft {...props} />
-
+                        <ImpactAdsLeft {...props} />      
                   </div>
 
                   {/* Notion文章主体 */}
@@ -245,13 +245,12 @@ const LayoutSlug = props => {
                   </article>
 
                   {/* 右栏 */}
-                  <div className='lg:col-span-1 flex flex-col justify-between px-2 lg:px-0 space-y-2 lg:space-y-0'>
-                    {/* 自定义广告 */}               
+                  <div className='lg:col-span-1 flex flex-col justify-between px-2 lg:px-0 space-y-2 lg:space-y-0'>              
                     {/* <ImpactAdsRight {...props} /> */}  
                     {/* adsterra广告 */}
-                    <div id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>                  
-
-
+                    <AdContainer {...props}/>
+                    <div className='sticky top-20' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>
+                                      
                     {/* meta信息 */}
                     {/* <section className='text-lg gap-y-6 text-center lg:text-left'>
                       <div className='text-gray-500 py-1 dark:text-gray-600 '>
