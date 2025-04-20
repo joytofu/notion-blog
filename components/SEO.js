@@ -207,12 +207,20 @@ const SEO = props => {
               `
             }}
           />
-          <script async src="https://adsdk.microsoft.com/mmnow/sdk.js?siteId=365749&publisherId=254037100" crossorigin="anonymous"></script>
+          <script async src="https://adsdk.microsoft.com/mmnow/sdk.js?siteId=365749&publisherId=254037100" crossOrigin="anonymous"></script>
         </>
       )
 
       {/* <!-- Bidvertiser2099407 --> */}
       <meta name='bidvertiser' content='<!-- Bidvertiser2099407 -->'></meta> 
+
+      {/* adsterra广告 */}
+      (
+        <>
+        <script type='text/javascript' src='//pl26429567.profitableratecpm.com/9e/89/fe/9e89fe63033648ad47b1c10bbc1d7871.js' />
+        <script async="async" data-cfasync="false" src="//pl26429840.profitableratecpm.com/913b771a97c5554c5c9f4cee77f8b36c/invoke.js" />
+        </>
+      )
           
       {children}
       

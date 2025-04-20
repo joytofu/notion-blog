@@ -186,9 +186,6 @@ const LayoutSlug = props => {
     <>
       <div className='w-full mx-auto max-w-screen-3xl'>
 
-
-      {/* ezoic广告 */}
-
         {/* 广告位 */}
         <WWAds orientation='vertical' />
 
@@ -249,14 +246,10 @@ const LayoutSlug = props => {
 
                   {/* 右栏 */}
                   <div className='lg:col-span-1 flex flex-col justify-between px-2 lg:px-0 space-y-2 lg:space-y-0'>
-                    {/* 自定义广告 */}
-                    {/* <Card className='sticky top-20'>
-                          <a rel="sponsored" href="https://puzzleio.pxf.io/c/5128239/2057134/25342" target="_blank" id="2057134">
-                            <Image src="/images/puzzle.io-1080x1080.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto' }}/>
-                          </a>                           
-                    </Card>  */}
-                    <ImpactAdsRight {...props} />
-
+                    {/* 自定义广告 */}               
+                    {/* <ImpactAdsRight {...props} /> */}  
+                    {/* adsterra广告 */}
+                    <div id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>                  
 
 
                     {/* meta信息 */}
