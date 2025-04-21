@@ -62,6 +62,9 @@ const ImpactAdsRight = (props) =>{
             <Link brand='puzzle.io' rel="sponsored" href="https://puzzleio.pxf.io/c/5128239/2057134/25342" target="_blank" id="2057134">
                 <Image src="/images/puzzle.io-1080x1080.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
             </Link> 
+            <Link brand='CBD' rel="sponsored" href="https://fabcbd.sjv.io/c/5128239/2126848/26923" target="_blank" id="2126848">
+                <Image src="/images/cbd-300x250.jpeg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
+            </Link> 
         </Card>
     )
 
