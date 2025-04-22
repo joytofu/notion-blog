@@ -14,7 +14,7 @@ const ImpactAdsLeft = (props) =>{
     }
 
 
-    if (post.category === 'home-decor'){
+    if (post.category === 'home-decor' || post.category === 'Architecture'){
         return (
             <Card className='sticky top-20'>
                 <Link brand='tiny land' rel="sponsored" href="https://tinyland.pxf.io/c/5128239/1669277/19135" target="_blank" id="1669277">

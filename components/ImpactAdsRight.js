@@ -23,7 +23,7 @@ const ImpactAdsRight = (props) =>{
         )
     }
 
-    if (post.category === 'home-decor'){
+    if (post.category === 'home-decor' || post.category === 'Architecture'){
         return (
             <Card className='sticky top-20'>
                 <Link brand='home styler' rel="sponsored" href="https://homestyler.sjv.io/c/5128239/2044747/22993" target="_blank" id="2044747">
