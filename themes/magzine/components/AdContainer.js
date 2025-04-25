@@ -8,7 +8,7 @@ const AdContainer = (props) => {
   const checkTimeoutRef = useRef(null);
 
   useEffect(() => {
-    const checkDelay = 2000; 
+    const checkDelay = 3000; 
 
     checkTimeoutRef.current = setTimeout(() => {
       const container = document.getElementById(adContainerId);

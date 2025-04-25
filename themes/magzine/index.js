@@ -189,6 +189,25 @@ const LayoutSlug = props => {
 
         {/* 广告位 */}
         <WWAds orientation='vertical' />
+
+        {/* adsterra banner广告位 */}
+        <>
+            <script type="text/javascript"
+                dangerouslySetInnerHTML={{
+                    __html: `
+                        atOptions = {
+                          'key' : '97ba2013d6be0e3903a65b4c72378c7d',
+                          'format' : 'iframe',
+                          'height' : 90,
+                          'width' : 728,
+                          'params' : {}
+	                      };
+                    `
+                  }}
+            />
+      
+            <script type="text/javascript" src="//www.highperformanceformat.com/97ba2013d6be0e3903a65b4c72378c7d/invoke.js" />
+          </>
      
 
         {/* 文章锁 */}
@@ -217,7 +236,8 @@ const LayoutSlug = props => {
                               <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
                             </a>                           
                         </Card> */}
-                        <ImpactAdsLeft {...props} />      
+                        <ImpactAdsLeft {...props} />
+                                                  
                   </div>
 
                   {/* Notion文章主体 */}
