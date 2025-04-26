@@ -28,6 +28,16 @@ const ImpactAdsLeft = (props) =>{
         )
     }
 
+    if (post.category === 'Crafts' || post.category === 'DIY'){
+        return (
+            <Card className='sticky top-20'>
+                <Link brand='MONI JEWELRY' rel="sponsored" href="https://imintentltd.pxf.io/c/5128239/2110453/25692" target="_blank" id="2110453">
+                    <Image src="/images/moni-1043x1564.jpeg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
+                </Link> 
+            </Card>
+        )
+    }
+
 
     return (
         <Card className='sticky top-20'>
