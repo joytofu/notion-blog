@@ -57,7 +57,7 @@ const ImpactAdsRight = (props) =>{
         )
     }
 
-    if (post.category === 'Gardening'){
+    if (post.category === 'Gardening' || post.category === 'Wedding'){
         return (
             <Card className='sticky top-20'>
                 <Link brand='Rosaholics' rel="sponsored" href="https://rosaholics.sjv.io/c/5128239/2935805/30772" target="_blank" id="2935805">
