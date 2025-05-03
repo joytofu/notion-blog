@@ -25,7 +25,7 @@ const ImpactAdsRight = (props) =>{
 
     if (post.category === 'home-decor' || post.category === 'Architecture'){
         return (
-            <Card className=' top-40'>
+            <Card className=' top-20'>
                 <Link brand='home styler' rel="sponsored" href="https://homestyler.sjv.io/c/5128239/2044747/22993" target="_blank" id="2044747">
                     <Image src="/images/Homestyler-336x280.jpeg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link> 
