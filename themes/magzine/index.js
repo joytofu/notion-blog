@@ -199,7 +199,7 @@ const LayoutSlug = props => {
                           'key' : '97ba2013d6be0e3903a65b4c72378c7d',
                           'format' : 'iframe',
                           'height' : 90,
-                          'width' : 728,
+                          'width' : 1280,
                           'params' : {}
 	                      };
                     `
@@ -236,6 +236,23 @@ const LayoutSlug = props => {
                               <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
                             </a>                           
                         </Card> */}
+                        <>
+                          <script type="text/javascript"
+                              dangerouslySetInnerHTML={{
+                                  __html: `
+                                      atOptions = {
+                                        'key' : 'a080f0751c5dbed0bc26e1fddff7defa',
+                                        'format' : 'iframe',
+                                        'height' : 600,
+                                        'width' : 160,
+                                        'params' : {}
+                                      };
+                                  `
+                                }}
+                          />
+      
+                          <script type="text/javascript" src="//www.highperformanceformat.com/a080f0751c5dbed0bc26e1fddff7defa/invoke.js" />
+                        </>
                         <ImpactAdsLeft {...props} />
                                                   
                   </div>
