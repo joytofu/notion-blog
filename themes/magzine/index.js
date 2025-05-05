@@ -189,25 +189,6 @@ const LayoutSlug = props => {
 
         {/* 广告位 */}
         <WWAds orientation='vertical' />
-
-        {/* adsterra banner广告位 */}
-        <>
-            <script type="text/javascript"
-                dangerouslySetInnerHTML={{
-                    __html: `
-                        atOptions = {
-                          'key' : '97ba2013d6be0e3903a65b4c72378c7d',
-                          'format' : 'iframe',
-                          'height' : 90,
-                          'width' : 1280,
-                          'params' : {}
-	                      };
-                    `
-                  }}
-            />
-      
-            <script type="text/javascript" src="//www.highperformanceformat.com/97ba2013d6be0e3903a65b4c72378c7d/invoke.js" />
-          </>
      
 
         {/* 文章锁 */}
@@ -236,6 +217,7 @@ const LayoutSlug = props => {
                               <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
                             </a>                           
                         </Card> */}
+                        <ImpactAdsLeft {...props} />
                         <>
                           <script type="text/javascript"
                               dangerouslySetInnerHTML={{
@@ -253,8 +235,7 @@ const LayoutSlug = props => {
       
                           <script type="text/javascript" src="//www.highperformanceformat.com/a080f0751c5dbed0bc26e1fddff7defa/invoke.js" />
                         </>
-                        <ImpactAdsLeft {...props} />
-                                                  
+                                                                      
                   </div>
 
                   {/* Notion文章主体 */}
@@ -283,12 +264,12 @@ const LayoutSlug = props => {
                   </article>
 
                   {/* 右栏 */}
-                  <div className='lg:col-span-1 flex flex-col justify-between px-2 lg:px-0 space-y-2 lg:space-y-0'>              
+                  <div className='lg:col-span-1 flex flex-col px-2 lg:px-0 space-y-2 lg:space-y-0'>              
                     {/* <ImpactAdsRight {...props} /> */}  
                     {/* adsterra广告 */}
                     {/* <AdContainer {...props}/> */}
-                    <div className=' top-20' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>
                     <ImpactAdsRight {...props} />
+                    <div className='top-20' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>              
                                       
                     {/* meta信息 */}
                     {/* <section className='text-lg gap-y-6 text-center lg:text-left'>
@@ -337,6 +318,25 @@ const LayoutSlug = props => {
 
                     {/* 底部留白 */}
                     <div></div>
+
+                    {/* adsterra banner广告位 */}
+                        <>
+                            <script type="text/javascript"
+                                dangerouslySetInnerHTML={{
+                                    __html: `
+                                        atOptions = {
+                                          'key' : '97ba2013d6be0e3903a65b4c72378c7d',
+                                          'format' : 'iframe',
+                                          'height' : 90,
+                                          'width' : 1280,
+                                          'params' : {}
+                                        };
+                                    `
+                                  }}
+                            />
+                      
+                            <script type="text/javascript" src="//www.highperformanceformat.com/97ba2013d6be0e3903a65b4c72378c7d/invoke.js" />
+                        </>
                   </div>
                 </div>
 

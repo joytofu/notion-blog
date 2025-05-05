@@ -16,7 +16,7 @@ const ImpactAdsLeft = (props) =>{
 
     if (post.category === 'home-decor' || post.category === 'Architecture'){
         return (
-            <Card className=' top-20'>
+            <Card className='top-20'>
                 <Link brand='tiny land' rel="sponsored" href="https://tinyland.pxf.io/c/5128239/1669277/19135" target="_blank" id="1669277">
                     <Image src="/images/tineland-768x768.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link> 
@@ -30,7 +30,7 @@ const ImpactAdsLeft = (props) =>{
 
     if (post.category === 'Crafts' || post.category === 'DIY'){
         return (
-            <Card className=' top-20'>
+            <Card className='top-20'>
                 <Link brand='MONI JEWELRY' rel="sponsored" href="https://imintentltd.pxf.io/c/5128239/2110453/25692" target="_blank" id="2110453">
                     <Image src="/images/moni-1043x1564.jpeg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link> 
@@ -40,7 +40,7 @@ const ImpactAdsLeft = (props) =>{
 
 
     return (
-        <Card className=' top-20'>
+        <Card className='top-20'>
             <a rel="sponsored" href="https://sittercity.s4lle7.net/c/5128239/2071327/3017" target="_blank" id="2071327">
                 <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto', paddingBottom: '25px' }}/>
             </a>                           
