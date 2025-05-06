@@ -232,8 +232,22 @@ const LayoutSlug = props => {
                                   `
                                 }}
                           />
-      
                           <script type="text/javascript" src="//www.highperformanceformat.com/a080f0751c5dbed0bc26e1fddff7defa/invoke.js" />
+
+                          <script type="text/javascript"
+                              dangerouslySetInnerHTML={{
+                                  __html: `
+                                      atOptions = {
+                                        'key' : '58414557a4b954f499e9441460fce4ce',
+                                        'format' : 'iframe',
+                                        'height' : 300,
+                                        'width' : 160,
+                                        'params' : {}
+                                      };
+                                  `
+                                }}
+                          />
+                          <script type="text/javascript" src="//www.highperformanceformat.com/58414557a4b954f499e9441460fce4ce/invoke.js" />
                         </>
                                                                       
                   </div>
@@ -328,14 +342,58 @@ const LayoutSlug = props => {
                                           'key' : '97ba2013d6be0e3903a65b4c72378c7d',
                                           'format' : 'iframe',
                                           'height' : 90,
-                                          'width' : 1280,
+                                          'width' : 728,
                                           'params' : {}
                                         };
                                     `
                                   }}
-                            />
-                      
+                            />                    
                             <script type="text/javascript" src="//www.highperformanceformat.com/97ba2013d6be0e3903a65b4c72378c7d/invoke.js" />
+
+                            <script type="text/javascript"
+                                dangerouslySetInnerHTML={{
+                                    __html: `
+                                        atOptions = {
+                                          'key' : '214cc6cb963148a564524c55f0e5badc',
+                                          'format' : 'iframe',
+                                          'height' : 60,
+                                          'width' : 468,
+                                          'params' : {}
+                                        };
+                                    `
+                                  }}
+                            />                    
+                            <script type="text/javascript" src="//www.highperformanceformat.com/214cc6cb963148a564524c55f0e5badc/invoke.js" />
+
+                            <script type="text/javascript"
+                                dangerouslySetInnerHTML={{
+                                    __html: `
+                                        atOptions = {
+                                          'key' : '6d63fcf51208307497c0e4b6817a12fd',
+                                          'format' : 'iframe',
+                                          'height' : 250,
+                                          'width' : 300,
+                                          'params' : {}
+                                        };
+                                    `
+                                  }}
+                            />                    
+                            <script type="text/javascript" src="//www.highperformanceformat.com/6d63fcf51208307497c0e4b6817a12fd/invoke.js" />
+
+                            <script type="text/javascript"
+                                dangerouslySetInnerHTML={{
+                                    __html: `
+                                        atOptions = {
+                                          'key' : 'a98d5ce30fe25c1ad129a121318d5191',
+                                          'format' : 'iframe',
+                                          'height' : 50,
+                                          'width' : 320,
+                                          'params' : {}
+                                        };
+                                    `
+                                  }}
+                            />                    
+                            <script type="text/javascript" src="//www.highperformanceformat.com/a98d5ce30fe25c1ad129a121318d5191/invoke.js" />
                         </>
                   </div>
                 </div>
