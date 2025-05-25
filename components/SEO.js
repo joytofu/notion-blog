@@ -181,6 +181,23 @@ const SEO = props => {
         </>
       )}
 
+      {/* Consent banner */}
+      (
+        <>
+          <script type="text/javascript"
+            dangerouslySetInnerHTML={{
+                __html: `
+                  var _iub = _iub || [];
+_iub.csConfiguration = {"siteId":4045055,"cookiePolicyId":80208880,"lang":"en","storage":{"useSiteId":true}};
+                `
+              }}
+          />
+          <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4045055.js"></script>
+          <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+          <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+        </>
+      )
+
       {/* Hydro Ads */}
       (
           <>
