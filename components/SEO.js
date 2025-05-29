@@ -226,7 +226,7 @@ const SEO = props => {
       )
 
       {/* Hydro Ads */}
-      (
+      {/* (
           <>
             <script 
               id="hydro_config"
@@ -239,21 +239,8 @@ const SEO = props => {
             />
             <script id="hydro_script" src="https://track.hydro.online/" />
           </>
-      )
+      ) */}
 
-      {/* Microsoft Monetize */}
-      (
-        <>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.msAdsQueue = window.msAdsQueue || [];
-              `
-            }}
-          />
-          <script async src="https://adsdk.microsoft.com/mmnow/sdk.js?siteId=365749&publisherId=254037100" crossOrigin="anonymous"></script>
-        </>
-      )
 
       {/* <!-- Bidvertiser2099407 --> */}
       <meta name='bidvertiser' content='<!-- Bidvertiser2099407 -->'></meta> 

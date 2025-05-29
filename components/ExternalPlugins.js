@@ -406,6 +406,8 @@ const ExternalPlugin = props => {
                 gtag('config', '${ANALYTICS_GOOGLE_ID}', {
                   page_path: window.location.pathname,
                 });
+                
+                gtag('config', '${ANALYTICS_GOOGLE_ID}', { 'debug_mode':true }); 
               `
             }}
           />
