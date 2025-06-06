@@ -54,8 +54,8 @@ const CONFIG = {
           href: 'https://sapkr.com/cookie-policy'
         },
         {
-          title: 'Policy Statement',
-          href: 'https://sapkr.com/privacy-statement-us'
+          title: 'Terms and Conditions',
+          href: 'https://sapkr.com/terms-and-conditions'
         }
       ]
     },
@@ -97,6 +97,26 @@ const CONFIG = {
         {
           title: 'DIY',
           href: 'https://sapkr.com/category/DIY'
+        },
+        {
+          title: 'Gardening',
+          href: 'https://sapkr.com/category/Gardening'
+        },
+        {
+          title: 'Wedding',
+          href: 'https://sapkr.com/category/Wedding'
+        },
+        {
+          title: 'Food & Drinks',
+          href: 'https://sapkr.com/category/Food-Drinks'
+        },
+        {
+          title: 'Vehicles',
+          href: 'https://sapkr.com/category/Vehicles'
+        },
+        {
+          title: 'Sport',
+          href: 'https://sapkr.com/category/Sport'
         },
       ]
     }
