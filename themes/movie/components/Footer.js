@@ -34,12 +34,7 @@ export const Footer = props => {
           )}
           <BeiAnGongAn />
           <span className='dark:text-gray-200 no-underline ml-4'>
-            Powered by
-            <a
-              href='https://github.com/tangly1024/NotionNext'
-              className=' hover:underline'>
-              NotionNext {siteConfig('VERSION')}
-            </a>
+            © 2025 <a href='https://sapkr.com'>SAPKR</a>. All Rights Reserved.
           </span>
         </div>
       </div>

@@ -26,12 +26,7 @@ const Footer = ({ siteInfo }) => {
       </div>
 
       <div className='text-xs font-serif py-1'>
-        Powered By{' '}
-        <a
-          href='https://github.com/tangly1024/NotionNext'
-          className='underline text-gray-500 dark:text-gray-300'>
-          NotionNext {siteConfig('VERSION')}
-        </a>
+        © 2025 <a href='https://sapkr.com'>SAPKR</a>. All Rights Reserved.
       </div>
 
       {siteConfig('BEI_AN') && (

@@ -214,8 +214,7 @@ const LayoutSlug = props => {
                             </a>                           
                         </Card> */}
 
-                        
-                        {/* <ImpactAdsLeft {...props} />
+                        <ImpactAdsLeft {...props} />                      
                         <>
                           <script type="text/javascript"
                               dangerouslySetInnerHTML={{
@@ -246,7 +245,7 @@ const LayoutSlug = props => {
                                 }}
                           />
                           <script type="text/javascript" src="//www.highperformanceformat.com/58414557a4b954f499e9441460fce4ce/invoke.js" />
-                        </> */}
+                        </>
                                                                       
                   </div>
 
@@ -276,14 +275,13 @@ const LayoutSlug = props => {
                   </article>
 
                   {/* 右栏 */}
-                  <div className='lg:col-span-1 flex flex-col px-2 lg:px-0 space-y-2 lg:space-y-0'>              
-                    {/* <ImpactAdsRight {...props} /> */}  
+                  <div className='lg:col-span-1 flex flex-col px-2 lg:px-0 space-y-2 lg:space-y-0'>                               
                     {/* adsterra广告 */}
                     {/* <AdContainer {...props}/> */}
 
 
-                    {/* <ImpactAdsRight {...props} />
-                    <div className='top-20' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div> */}              
+                    <ImpactAdsRight {...props} />
+                    <div className='top-20' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>              
                                       
                     {/* meta信息 */}
                     {/* <section className='text-lg gap-y-6 text-center lg:text-left'>
@@ -334,7 +332,7 @@ const LayoutSlug = props => {
                     <div></div>
 
                     {/* adsterra banner广告位 */}
-                        {/* <>
+                        <>
                             <script type="text/javascript"
                                 dangerouslySetInnerHTML={{
                                     __html: `
@@ -394,7 +392,7 @@ const LayoutSlug = props => {
                                   }}
                             />                    
                             <script type="text/javascript" src="//www.highperformanceformat.com/a98d5ce30fe25c1ad129a121318d5191/invoke.js" />
-                        </> */}
+                        </>
                   </div>
                 </div>
 
