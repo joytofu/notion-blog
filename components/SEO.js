@@ -183,17 +183,6 @@ const SEO = props => {
       )}
 
 
-      {/* <!-- Bidvertiser2099407 --> */}
-      <meta name='bidvertiser' content='<!-- Bidvertiser2099407 -->'></meta> 
-
-      {/* adsterra广告 */}
-      (
-        <>
-        <script async="async" data-cfasync="false" src="//pl26429840.profitableratecpm.com/913b771a97c5554c5c9f4cee77f8b36c/invoke.js" />
-
-
-        </>
-      )
           
       {children}
       
