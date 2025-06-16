@@ -26,7 +26,7 @@ const Footer = ({ siteInfo }) => {
       </div>
 
       <div className='text-xs font-serif py-1'>
-        © 2025 <a href='https://sapkr.com'>SAPKR</a>. All Rights Reserved.
+        © 2025 <a href='https://mktspy.com'>mktspy</a>. All Rights Reserved.
       </div>
 
       {siteConfig('BEI_AN') && (

@@ -7,7 +7,7 @@ const CONFIG = {
 
   MAGZINE_HOME_HIDDEN_CATEGORY: '分享杂文', //不希望在首页展示的文章分类，用英文逗号隔开
 
-  MAGZINE_HOME_TITLE: 'Sapkr',
+  MAGZINE_HOME_TITLE: 'mktspy',
   MAGZINE_HOME_DESCRIPTION:
     '',
   MAGZINE_HOME_TIPS: '',  
@@ -43,19 +43,19 @@ const CONFIG = {
       menus: [
         {
           title: 'About Us',
-          href: 'https://sapkr.com/about-us'
+          href: 'https://mktspy.com/about-us'
         },
         {
           title: 'Privacy Policy',
-          href: 'https://sapkr.com/privacy-policy'
+          href: 'https://mktspy.com/privacy-policy'
         },
         {
           title: 'Cookie Policy',
-          href: 'https://sapkr.com/cookie-policy'
+          href: 'https://mktspy.com/cookie-policy'
         },
         {
           title: 'Terms and Conditions',
-          href: 'https://sapkr.com/terms-and-conditions'
+          href: 'https://mktspy.com/terms-and-conditions'
         }
       ]
     },
@@ -64,59 +64,59 @@ const CONFIG = {
       menus: [
         {
           title: 'Design',
-          href: 'https://sapkr.com/category/Design'
+          href: 'https://mktspy.com/category/Design'
         },
         {
           title: 'Fashion',
-          href: 'https://sapkr.com/category/Fashion'
+          href: 'https://mktspy.com/category/Fashion'
         },
         {
           title: 'Art',
-          href: 'https://sapkr.com/category/Art'
+          href: 'https://mktspy.com/category/Art'
         },
         {
           title: 'Crafts',
-          href: 'https://sapkr.com/category/Crafts'
+          href: 'https://mktspy.com/category/Crafts'
         },
         {
           title: 'Architecture',
-          href: 'https://sapkr.com/category/Architecture'
+          href: 'https://mktspy.com/category/Architecture'
         },
         {
           title: 'Animals',
-          href: 'https://sapkr.com/category/Animals'
+          href: 'https://mktspy.com/category/Animals'
         },
         {
           title: 'Home Decor',
-          href: 'https://sapkr.com/category/home-decor'
+          href: 'https://mktspy.com/category/home-decor'
         },
         {
           title: 'Beauty',
-          href: 'https://sapkr.com/category/Beauty'
+          href: 'https://mktspy.com/category/Beauty'
         },
         {
           title: 'DIY',
-          href: 'https://sapkr.com/category/DIY'
+          href: 'https://mktspy.com/category/DIY'
         },
         {
           title: 'Gardening',
-          href: 'https://sapkr.com/category/Gardening'
+          href: 'https://mktspy.com/category/Gardening'
         },
         {
           title: 'Wedding',
-          href: 'https://sapkr.com/category/Wedding'
+          href: 'https://mktspy.com/category/Wedding'
         },
         {
           title: 'Food & Drinks',
-          href: 'https://sapkr.com/category/Food-Drinks'
+          href: 'https://mktspy.com/category/Food-Drinks'
         },
         {
           title: 'Vehicles',
-          href: 'https://sapkr.com/category/Vehicles'
+          href: 'https://mktspy.com/category/Vehicles'
         },
         {
           title: 'Sport',
-          href: 'https://sapkr.com/category/Sport'
+          href: 'https://mktspy.com/category/Sport'
         },
       ]
     }
