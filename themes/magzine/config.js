@@ -39,85 +39,54 @@ const CONFIG = {
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
     {
-      name: 'Quick Links',
+      name: '快速链接',
       menus: [
         {
-          title: 'About Us',
+          title: '关于我们',
           href: 'https://mktspy.com/about-us'
         },
         {
-          title: 'Privacy Policy',
+          title: '隐私政策',
           href: 'https://mktspy.com/privacy-policy'
         },
         {
-          title: 'Cookie Policy',
+          title: 'Cookie政策',
           href: 'https://mktspy.com/cookie-policy'
         },
         {
-          title: 'Terms and Conditions',
+          title: '协议与条款',
           href: 'https://mktspy.com/terms-and-conditions'
         }
       ]
     },
     {
-      name: 'Category',
+      name: '栏目',
       menus: [
         {
-          title: 'Design',
-          href: 'https://mktspy.com/category/Design'
+          title: '每日动态',
+          href: 'https://mktspy.com/category/daily'
         },
         {
-          title: 'Fashion',
-          href: 'https://mktspy.com/category/Fashion'
+          title: '市场数据',
+          href: 'https://mktspy.com/category/statistics'
         },
         {
-          title: 'Art',
-          href: 'https://mktspy.com/category/Art'
+          title: '基金投资',
+          href: 'https://mktspy.com/category/funds'
         },
         {
-          title: 'Crafts',
-          href: 'https://mktspy.com/category/Crafts'
+          title: '投资策略',
+          href: 'https://mktspy.com/category/strategy'
         },
         {
-          title: 'Architecture',
-          href: 'https://mktspy.com/category/Architecture'
+          title: '行业洞察',
+          href: 'https://mktspy.com/category/insight'
         },
         {
-          title: 'Animals',
-          href: 'https://mktspy.com/category/Animals'
+          title: '投资方法',
+          href: 'https://mktspy.com/category/methods'
         },
-        {
-          title: 'Home Decor',
-          href: 'https://mktspy.com/category/home-decor'
-        },
-        {
-          title: 'Beauty',
-          href: 'https://mktspy.com/category/Beauty'
-        },
-        {
-          title: 'DIY',
-          href: 'https://mktspy.com/category/DIY'
-        },
-        {
-          title: 'Gardening',
-          href: 'https://mktspy.com/category/Gardening'
-        },
-        {
-          title: 'Wedding',
-          href: 'https://mktspy.com/category/Wedding'
-        },
-        {
-          title: 'Food & Drinks',
-          href: 'https://mktspy.com/category/Food-Drinks'
-        },
-        {
-          title: 'Vehicles',
-          href: 'https://mktspy.com/category/Vehicles'
-        },
-        {
-          title: 'Sport',
-          href: 'https://mktspy.com/category/Sport'
-        },
+        
       ]
     }
     /* {
