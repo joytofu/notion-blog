@@ -42,9 +42,9 @@ const PostItemCard = ({ post, className }) => {
           {/* 发布日期 */}
           <Link
             className='text-sm'
-            href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
+            href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM-dd')}`}
             passHref>
-            {formatDateFmt(post?.publishDate, 'yyyy-MM')}
+            {formatDateFmt(post?.publishDate, 'yyyy-MM-dd')}
           </Link>
         </div>
       </div>

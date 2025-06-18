@@ -43,6 +43,7 @@ import Image from 'next/image'
 import ImpactAdsRight from '@/components/ImpactAdsRight'
 import ImpactAdsLeft from '@/components/ImpactAdsLeft'
 import AdContainer from './components/AdContainer'
+import CategoryMap from '@/lib/categoryMap'
 
 // 主题全局状态
 const ThemeGlobalMagzine = createContext()
@@ -116,7 +117,7 @@ const LayoutIndex = props => {
 
       {/* 最新文章区块 */}
       <PostSimpleListHorizontal
-        title='Latest Posts'
+        title='最新文章'
         href='/archive'
         posts={newPosts}
       />
@@ -141,20 +142,11 @@ const LayoutPostList = props => {
   // 当前筛选的分类或标签
   const { category, tag, title, NOTION_CONFIG } = props
 
-  const categoryMap = {
-  funds: "基金投资",
-  methods: "投资方法",
-  daily: "每日动态",
-  statistics: "市场数据",
-  strategy: "投资策略",
-  insight: "行业洞察",
-};
-
   return (
     <div className=' max-w-screen-3xl mx-auto w-full px-2 lg:px-0'>
       {/* 一个顶部条 */}
       {/* <h2 className='py-8 text-2xl font-bold'>{category || tag }</h2> */}
-      <h2 className='py-8 text-2xl font-bold'>{categoryMap[category] || category}</h2>
+      <h2 className='py-8 text-2xl font-bold'>{CategoryMap[category] || category}</h2>
 
       {siteConfig('POST_LIST_STYLE', 'page', NOTION_CONFIG) === 'page' ? (
         <PostListPage {...props} />

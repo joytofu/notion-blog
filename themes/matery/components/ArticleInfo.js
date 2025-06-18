@@ -25,7 +25,7 @@ export const ArticleInfo = props => {
         {post?.type !== 'Page' && (
           <>
             <Link
-              href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
+              href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM-dd')}`}
               passHref
               className='cursor-pointer whitespace-nowrap'>
               <i className='far fa-calendar-minus fa-fw' />{' '}

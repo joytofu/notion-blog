@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import CategoryMap from '@/lib/categoryMap'
 
 export default function CategoryItem({ selected, category, categoryCount }) {
   return (
@@ -12,7 +13,7 @@ export default function CategoryItem({ selected, category, categoryCount }) {
         'text-sm font-semibold hover:underline flex text-md items-center duration-300 cursor-pointer py-1 whitespace-nowrap'
       }>
       <div>
-        {category} {categoryCount && `(${categoryCount})`}
+        {CategoryMap[category] || category} {categoryCount && `(${categoryCount})`}
       </div>
     </Link>
   )

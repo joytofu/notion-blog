@@ -88,7 +88,7 @@ export const BlogPostCardInfo = ({
         <div className='text-gray-400 justify-between flex'>
           {/* 日期 */}
           <Link
-            href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
+            href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM-dd')}`}
             passHref
             className='font-light menu-link cursor-pointer text-sm leading-4 mr-3'>
             <i className='far fa-calendar-alt mr-1' />
