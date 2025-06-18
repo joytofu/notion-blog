@@ -4,7 +4,6 @@ import { loadExternalResource } from '@/lib/utils'
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import Script from 'next/script'
 import { useEffect } from 'react'
 
 /**
@@ -117,7 +116,6 @@ const SEO = props => {
       />
       <meta name='robots' content='follow, index' />
       <meta charSet='UTF-8' />
-      <script src='/js/sapkrref.js'></script>
       {SEO_GOOGLE_SITE_VERIFICATION && (
         <meta
           name='google-site-verification'
@@ -183,15 +181,24 @@ const SEO = props => {
       )}
 
 
-      {/* <!-- Bidvertiser2099407 --> */}
-      <meta name='bidvertiser' content='<!-- Bidvertiser2099407 -->'></meta> 
-
       {/* adsterra广告 */}
-      (
+      {/* (
         <>
         <script async="async" data-cfasync="false" src="//pl26429840.profitableratecpm.com/913b771a97c5554c5c9f4cee77f8b36c/invoke.js" />
+        </>
+      ) */}
 
-
+      {/* Grow of Mediavine */}
+      (
+        <>
+          <script data-grow-initializer=""
+            dangerouslySetInnerHTML={{
+                                  __html: `
+                                      !(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo4N2NhYzFiOC1jYzA0LTQ3MmUtYmViZC1mNDIxMDRlMWJjMWI=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();
+                                  `
+                                }}
+          
+          />
         </>
       )
           
