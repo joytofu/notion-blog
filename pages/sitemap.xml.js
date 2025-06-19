@@ -85,7 +85,7 @@ function generateLocalesSitemap(link, allPages, locale) {
       priority: '0.7'
     }
   ]
-  const postFields =
+  /* const postFields =
     allPages
       ?.filter(p => p.status === BLOG.NOTION_PROPERTY_NAME.status_publish)
       ?.map(post => {
@@ -98,7 +98,27 @@ function generateLocalesSitemap(link, allPages, locale) {
           changefreq: 'daily',
           priority: '0.7'
         }
-      }) ?? []
+      }) ?? [] */
+      const postFields = allPages
+        ?.filter(p => {
+          // 过滤未发布内容
+          const isPublished = p.status === BLOG.NOTION_PROPERTY_NAME.status_publish;
+          // 过滤以-pin结尾的slug（处理前导斜杠）
+          const slug = p.slug.startsWith('/') ? p.slug.slice(1) : p.slug;
+          const isNotPinPost = !slug.endsWith('-pin');
+          return isPublished && isNotPinPost;
+        })
+        ?.map(post => {
+          const slugWithoutLeadingSlash = post?.slug.startsWith('/')
+            ? post?.slug?.slice(1)
+            : post.slug;
+          return {
+            loc: `${link}${locale}/${slugWithoutLeadingSlash}`,
+            lastmod: new Date(post?.publishDay).toISOString().split('T')[0],
+            changefreq: 'daily',
+            priority: '0.7'
+          }
+        }) ?? [];
 
   return defaultFields.concat(postFields)
 }
