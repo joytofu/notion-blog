@@ -68,7 +68,7 @@ function getTopPosts({ latestPosts, allNavPages }) {
     sortPosts = Object.create(allNavPages)
   }
 
-  const count = siteConfig('MAGZINE_RECOMMEND_POST_COUNT', 6)
+  const count = siteConfig('MAGZINE_RECOMMEND_POST_COUNT', 8)
   // 只取前4篇
   const topPosts = []
   for (const post of sortPosts) {

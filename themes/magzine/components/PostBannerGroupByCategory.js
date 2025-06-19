@@ -13,7 +13,7 @@ const PostBannerGroupByCategory = props => {
   }
 
   // 按分类将文章分组成文件夹
-  const categoryFolders = groupArticles(categoryOptions, allNavPages.slice(8))
+  const categoryFolders = groupArticles(categoryOptions, allNavPages.slice(0))
 
   return (
     <>

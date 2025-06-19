@@ -14,9 +14,9 @@ const CONFIG = {
 
   // 首页底部推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   MAGZINE_RECOMMEND_POST_TAG: '',
-  MAGZINE_RECOMMEND_POST_COUNT: 4,
+  MAGZINE_RECOMMEND_POST_COUNT: 8,
   MAGZINE_RECOMMEND_POST_TITLE: '推荐文章', // 推荐文章标题
-  MAGZINE_RECOMMEND_POST_SORT_BY_UPDATE_TIME: true, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
+  MAGZINE_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
 
   // Style
   MAGZINE_RIGHT_PANEL_DARK: process.env.NEXT_PUBLIC_MAGZINE_RIGHT_DARK || false, // 右侧面板深色模式
