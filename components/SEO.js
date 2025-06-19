@@ -117,7 +117,7 @@ const SEO = props => {
       />
       <meta name='robots' content='follow, index' />
       <meta charSet='UTF-8' />
-      <script src='/js/ref.js'></script>
+      {/* <script src='/js/ref.js'></script> */}
       {SEO_GOOGLE_SITE_VERIFICATION && (
         <meta
           name='google-site-verification'

@@ -1,5 +1,6 @@
 import { useGlobal } from '@/lib/global'
 import Link from 'next/link'
+import CategoryMap from '@/lib/categoryMap'
 
 /**
  * 分类
@@ -29,7 +30,7 @@ const CategoryGroup = ({ currentCategory, categoryOptions }) => {
                 'text-lg hover:underline flex text-md items-center duration-300 cursor-pointer py-1 whitespace-nowrap'
               }>
               <span>
-                {category.name} {category?.count && `(${category?.count})`}
+                {CategoryMap[category.name] || category.name} {category?.count && `(${category?.count})`}
               </span>
             </Link>
           )
