@@ -119,6 +119,16 @@ const CONFIG = {
           href: 'https://sapkr.com/category/Sport'
         },
       ]
+    },
+    {
+      name: 'Contact Us',
+      menus: [
+        {
+          title: 'Have a question or need help? Email us at support@sapkr.com',
+          href: 'mailto:support@sapkr.com'
+        },
+        
+      ]
     }
     /* {
       name: '友情链接',
