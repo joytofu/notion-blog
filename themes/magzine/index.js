@@ -185,6 +185,47 @@ const LayoutSlug = props => {
     }
   }, [router])
 
+  useEffect(() => {
+    if (post && typeof window !== 'undefined') {
+      const scriptId = 'schema-article-jsonld'
+      // Remove existing schema if any
+      const existing = document.getElementById(scriptId)
+      if (existing) {
+        existing.remove()
+      }
+      const schemaData = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": post?.title,
+        "description": post?.summary || post?.excerpt,
+        "datePublished": post?.publishTime,
+        "dateModified": post?.lastEditedTime,
+        "author": {
+          "@type": "Person",
+          "name": post?.author || siteConfig('AUTHOR')
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "MKTSPY",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.notion.so/image/attachment%3A70a90344-6d59-4576-82dd-204da190456f%3Atrans_bg.png?table=collection&id=212b5dc8-d074-8111-876c-000b02902634&t=212b5dc8-d074-8111-876c-000b02902634"
+          }
+        },
+        "image": post?.pageCover || siteConfig('PAGE_COVER'),
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": typeof window !== 'undefined' ? window.location.href : ''
+        }
+      }
+      const script = document.createElement('script')
+      script.type = 'application/ld+json'
+      script.id = scriptId
+      script.innerHTML = JSON.stringify(schemaData)
+      document.head.appendChild(script)
+    }
+  }, [post])
+
   return (
     <>
       <div className='w-full mx-auto max-w-screen-3xl'>     

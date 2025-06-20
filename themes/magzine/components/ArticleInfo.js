@@ -31,12 +31,12 @@ export default function ArticleInfo(props) {
         </div>
 
         {/* title */}
-        <h2 className='text-4xl text-center dark:text-gray-300'>
+        <h1 className='text-4xl text-center dark:text-gray-300'>
           {siteConfig('POST_TITLE_ICON') && (
             <NotionIcon icon={post?.pageIcon} />
           )}
           {post?.title}
-        </h2>
+        </h1>
 
         <div className='text-xl text-center'>{post?.summary}</div>
       </div>
