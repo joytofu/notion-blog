@@ -25,8 +25,8 @@ const Footer = ({ title }) => {
       <div className='max-w-screen-3xl w-full mx-auto '>
         {/* 信息与链接区块 */}
         <div className='w-full flex lg:flex-row flex-col justify-between py-16'>
-          <div className='gap-x-2 py-6 flex items-center'>
-            {/* 站长信息 */}
+          {/* <div className='gap-x-2 py-6 flex items-center'>
+            
             <LazyImage
               src={siteInfo?.icon}
               className='rounded-full'
@@ -42,10 +42,10 @@ const Footer = ({ title }) => {
                 {siteConfig('AUTHOR')}
               </a>
             </div>
-          </div>
+          </div> */}
 
           {/* 右侧链接区块 */}
-          <div className='grid grid-cols-2 lg:grid-cols-4 lg:gap-16 gap-8'>
+          <div className='grid grid-cols-2 lg:grid-cols-3 lg:gap-16 gap-8'>
             {MAGZINE_FOOTER_LINKS?.map((group, index) => {
               return (
                 <div key={index}>

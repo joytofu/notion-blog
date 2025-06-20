@@ -88,6 +88,16 @@ const CONFIG = {
         },
         
       ]
+    },
+    {
+      name: '联系我们',
+      menus: [
+        {
+          title: '如有任何疑问，欢迎通过电子邮件联系我们：support@mktspy.com',
+          href: 'mailto:support@mktspy.com'
+        },
+        
+      ]
     }
     /* {
       name: '友情链接',
