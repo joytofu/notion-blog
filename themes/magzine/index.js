@@ -126,7 +126,7 @@ const LayoutIndex = props => {
       <PostBannerGroupByCategory {...props} />
 
       {/* 文章推荐  */}
-      <PostListRecommend {...props} />
+      {/* <PostListRecommend {...props} /> */}
 
       {/* 行动呼吁 */}
       <CTA {...props} />
