@@ -125,7 +125,7 @@ const LayoutIndex = props => {
       <PostBannerGroupByCategory {...props} />
 
       {/* 文章推荐  */}
-      <PostListRecommend {...props} />
+      {/* <PostListRecommend {...props} /> */}
 
       {/* 行动呼吁 */}
       <CTA {...props} />
@@ -169,20 +169,60 @@ const LayoutSlug = props => {
     // 404
     if (!post && router?.route?.indexOf('/[prefix]') === 0) {
       setTimeout(() => {
-        if (isBrowser) {
-          const article = document.querySelector(
-            '#article-wrapper #notion-article'
-          )
-          if (!article) {
-            router.push('/404').then(() => {
-              console.warn('找不到页面', router.asPath)
-            })
-          }
+      if (isBrowser) {
+        const article = document.querySelector(
+        '#article-wrapper #notion-article'
+        )
+        if (!article) {
+        router.push('/404').then(() => {
+          console.warn('找不到页面', router.asPath)
+        })
         }
+      }
       }, waiting404)
     }
   }, [router])
-
+  // Schema Markup for Article
+  useEffect(() => {
+    if (post && typeof window !== 'undefined') {
+      const scriptId = 'schema-article-jsonld'
+      // Remove existing schema if any
+      const existing = document.getElementById(scriptId)
+      if (existing) {
+        existing.remove()
+      }
+      const schemaData = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": post?.title,
+        "description": post?.summary || post?.excerpt,
+        "datePublished": post?.publishTime,
+        "dateModified": post?.lastEditedTime,
+        "author": {
+          "@type": "Person",
+          "name": post?.author || siteConfig('AUTHOR')
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "SAPKR",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.notion.so/image/attachment%3Aa18a710d-d88a-4634-8915-eda5ff6d51b0%3Ablack_on_trans.png?table=collection&id=196b5dc8-d074-81d4-b935-000b3860304e&t=196b5dc8-d074-81d4-b935-000b3860304e"
+          }
+        },
+        "image": post?.pageCover || siteConfig('PAGE_COVER'),
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": typeof window !== 'undefined' ? window.location.href : ''
+        }
+      }
+      const script = document.createElement('script')
+      script.type = 'application/ld+json'
+      script.id = scriptId
+      script.innerHTML = JSON.stringify(schemaData)
+      document.head.appendChild(script)
+    }
+  }, [post])
   return (
     <>
       <div className='w-full mx-auto max-w-screen-3xl'>     
