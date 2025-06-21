@@ -7,7 +7,7 @@ import { siteConfig } from '@/lib/config'
 export default function PoweredBy(props) {
   return (
     <div className={`inline text-sm font-serif ${props.className || ''}`}>
-      <a href='https://visualjournalcraft.com'>SAPKR</a>. All Rights Reserved.
+      <a href='https://visualjournalcraft.com'>Visual Journal Craft</a>. All Rights Reserved.
     </div>
   )
 }

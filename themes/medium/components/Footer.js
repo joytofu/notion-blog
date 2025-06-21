@@ -42,7 +42,7 @@ const Footer = ({ title }) => {
         <br />
         <h1>{title}</h1>
         <span className='text-xs font-serif'>
-          © 2025 <a href='https://visualjournalcraft.com'>SAPKR</a>. All Rights Reserved.
+          © 2025 <a href='https://visualjournalcraft.com'>Visual Journal Craft</a>. All Rights Reserved.
         </span>
       </span>
     </footer>

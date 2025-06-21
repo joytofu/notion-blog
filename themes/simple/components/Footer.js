@@ -35,7 +35,7 @@ export default function Footer(props) {
           )}
           <BeiAnGongAn />
           <span className='no-underline ml-4'>
-            © 2025 <a href='https://visualjournalcraft.com'>SAPKR</a>. All Rights Reserved.
+            © 2025 <a href='https://visualjournalcraft.com'>Visual Journal Craft</a>. All Rights Reserved.
           </span>
         </div>
       </div>
