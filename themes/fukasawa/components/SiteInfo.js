@@ -39,7 +39,7 @@ function SiteInfo({ title }) {
         </span>
         <br />
         <span className='text-xs font-serif'>
-          © 2025 <a href='https://sapkr.com'>SAPKR</a>. All Rights Reserved.
+          © 2025 <a href='https://visualjournalcraft.com'>SAPKR</a>. All Rights Reserved.
         </span>
         <br />
       </span>

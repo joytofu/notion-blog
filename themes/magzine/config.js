@@ -43,89 +43,65 @@ const CONFIG = {
       menus: [
         {
           title: 'About Us',
-          href: 'https://sapkr.com/about-us'
+          href: 'https://visualjournalcraft.com/about-us'
         },
         {
           title: 'Privacy Policy',
-          href: 'https://sapkr.com/privacy-policy'
+          href: 'https://visualjournalcraft.com/privacy-policy'
         },
         {
           title: 'Cookie Policy',
-          href: 'https://sapkr.com/cookie-policy'
+          href: 'https://visualjournalcraft.com/cookie-policy'
         },
         {
           title: 'Terms and Conditions',
-          href: 'https://sapkr.com/terms-and-conditions'
-        }
+          href: 'https://visualjournalcraft.com/terms-and-conditions'
+        },
+        {
+          title: 'Terms and Conditions',
+          href: 'https://visualjournalcraft.com/terms-and-conditions'
+        },
+        {
+          title: 'DMCA',
+          href: 'https://visualjournalcraft.com/dmca'
+        },
+        {
+          title: 'Disclaimer',
+          href: 'https://visualjournalcraft.com/disclaimer'
+        },
+        {
+          title: 'CCPA',
+          href: 'https://visualjournalcraft.com/ccpa'
+        }       
       ]
     },
     {
       name: 'Category',
       menus: [
         {
-          title: 'Design',
-          href: 'https://sapkr.com/category/Design'
+          title: 'Teardown',
+          href: 'https://visualjournalcraft.com/category/teardown'
         },
         {
-          title: 'Fashion',
-          href: 'https://sapkr.com/category/Fashion'
+          title: 'Craft & Technique',
+          href: 'https://visualjournalcraft.com/category/craft-and-technique'
         },
         {
-          title: 'Art',
-          href: 'https://sapkr.com/category/Art'
+          title: 'Creator Spotlight',
+          href: 'https://visualjournalcraft.com/category/creator-spotlight'
         },
         {
-          title: 'Crafts',
-          href: 'https://sapkr.com/category/Crafts'
-        },
-        {
-          title: 'Architecture',
-          href: 'https://sapkr.com/category/Architecture'
-        },
-        {
-          title: 'Animals',
-          href: 'https://sapkr.com/category/Animals'
-        },
-        {
-          title: 'Home Decor',
-          href: 'https://sapkr.com/category/home-decor'
-        },
-        {
-          title: 'Beauty',
-          href: 'https://sapkr.com/category/Beauty'
-        },
-        {
-          title: 'DIY',
-          href: 'https://sapkr.com/category/DIY'
-        },
-        {
-          title: 'Gardening',
-          href: 'https://sapkr.com/category/Gardening'
-        },
-        {
-          title: 'Wedding',
-          href: 'https://sapkr.com/category/Wedding'
-        },
-        {
-          title: 'Food & Drinks',
-          href: 'https://sapkr.com/category/Food-Drinks'
-        },
-        {
-          title: 'Vehicles',
-          href: 'https://sapkr.com/category/Vehicles'
-        },
-        {
-          title: 'Sport',
-          href: 'https://sapkr.com/category/Sport'
-        },
+          title: 'Design Foundations',
+          href: 'https://visualjournalcraft.com/category/design-foundations'
+        }       
       ]
     },
     {
       name: 'Contact Us',
       menus: [
         {
-          title: 'Have a question or need help? Email us at support@sapkr.com',
-          href: 'mailto:support@sapkr.com'
+          title: 'Have a question or need help? Email us at support@visualjournalcraft.com',
+          href: 'mailto:support@visualjournalcraft.com'
         },
         
       ]

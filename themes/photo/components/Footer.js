@@ -34,7 +34,7 @@ export const Footer = props => {
           )}
           <BeiAnGongAn />
           <span className='dark:text-gray-200 no-underline ml-4'>
-            © 2025 <a href='https://sapkr.com'>SAPKR</a>. All Rights Reserved.
+            © 2025 <a href='https://visualjournalcraft.com'>SAPKR</a>. All Rights Reserved.
           </span>
         </div>
       </div>

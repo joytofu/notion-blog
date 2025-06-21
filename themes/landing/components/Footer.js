@@ -151,7 +151,7 @@ export default function Footer() {
                     <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
                         <li>
                           <div className='h-full flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100'>
-                             © 2025 <a href='https://sapkr.com'>SAPKR</a>. All Rights Reserved.
+                             © 2025 <a href='https://visualjournalcraft.com'>SAPKR</a>. All Rights Reserved.
                           </div>
                         </li>
                         {/* <li>

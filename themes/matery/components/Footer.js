@@ -49,7 +49,7 @@ const Footer = ({ title }) => {
         <br />
         <h1>{title}</h1>
         <span className='text-xs '>
-          © 2025 <a href='https://sapkr.com'>SAPKR</a>. All Rights Reserved.
+          © 2025 <a href='https://visualjournalcraft.com'>SAPKR</a>. All Rights Reserved.
         </span>
       </span>
       <br />
