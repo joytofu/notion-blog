@@ -39,7 +39,7 @@ const CONFIG = {
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
     {
-      name: '快速链接',
+      name: 'Quick Links',
       menus: [
         {
           title: 'About Us',
@@ -52,10 +52,6 @@ const CONFIG = {
         {
           title: 'Cookie Policy',
           href: 'https://visualjournalcraft.com/cookie-policy'
-        },
-        {
-          title: 'Terms and Conditions',
-          href: 'https://visualjournalcraft.com/terms-and-conditions'
         },
         {
           title: 'Terms and Conditions',
@@ -76,7 +72,7 @@ const CONFIG = {
       ]
     },
     {
-      name: '栏目',
+      name: 'Categories',
       menus: [
         {
           title: 'Teardown',
@@ -87,8 +83,8 @@ const CONFIG = {
           href: 'https://visualjournalcraft.com/category/craft-and-technique'
         },
         {
-          title: 'Creator Spotlight',
-          href: 'https://visualjournalcraft.com/category/creator-spotlight'
+          title: 'Toolkit & Inspiration',
+          href: 'https://visualjournalcraft.com/category/toolkit-and-inspiration'
         },
         {
           title: 'Design Foundations',
