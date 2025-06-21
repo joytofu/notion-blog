@@ -3,6 +3,7 @@ import CONFIG from '../config'
 import PostItemCard from './PostItemCard'
 import PostListEmpty from './PostListEmpty'
 import Swiper from './Swiper'
+import CategoryMap from '@/lib/categoryMap'
 
 /**
  * 博文水平列表
@@ -25,7 +26,7 @@ const PostListRecommend = ({ latestPosts, allNavPages }) => {
       <div className='max-w-screen-3xl w-full mx-auto'>
         {/* 标题 */}
         <div className='flex justify-between items-center py-6'>
-          <h3 className='text-4xl font-bold'>{title}</h3>
+          <h3 className='text-4xl font-bold'>{CategoryMap[title] || title}</h3>
         </div>
         {/* 列表 */}
         <div className='hidden lg:grid grid-cols-1 lg:grid-cols-4 gap-4'>
@@ -67,7 +68,7 @@ function getTopPosts({ latestPosts, allNavPages }) {
     sortPosts = Object.create(allNavPages)
   }
 
-  const count = siteConfig('MAGZINE_RECOMMEND_POST_COUNT', 6)
+  const count = siteConfig('MAGZINE_RECOMMEND_POST_COUNT', 8)
   // 只取前4篇
   const topPosts = []
   for (const post of sortPosts) {

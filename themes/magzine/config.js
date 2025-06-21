@@ -7,16 +7,16 @@ const CONFIG = {
 
   MAGZINE_HOME_HIDDEN_CATEGORY: '分享杂文', //不希望在首页展示的文章分类，用英文逗号隔开
 
-  MAGZINE_HOME_TITLE: 'Sapkr',
+  MAGZINE_HOME_TITLE: 'mktspy',
   MAGZINE_HOME_DESCRIPTION:
     '',
   MAGZINE_HOME_TIPS: '',  
 
   // 首页底部推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
   MAGZINE_RECOMMEND_POST_TAG: '',
-  MAGZINE_RECOMMEND_POST_COUNT: 4,
-  MAGZINE_RECOMMEND_POST_TITLE: 'Featured',
-  MAGZINE_RECOMMEND_POST_SORT_BY_UPDATE_TIME: true, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
+  MAGZINE_RECOMMEND_POST_COUNT: 8,
+  MAGZINE_RECOMMEND_POST_TITLE: '推荐文章', // 推荐文章标题
+  MAGZINE_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
 
   // Style
   MAGZINE_RIGHT_PANEL_DARK: process.env.NEXT_PUBLIC_MAGZINE_RIGHT_DARK || false, // 右侧面板深色模式
@@ -39,7 +39,7 @@ const CONFIG = {
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
     {
-      name: 'Quick Links',
+      name: '快速链接',
       menus: [
         {
           title: 'About Us',
@@ -76,7 +76,7 @@ const CONFIG = {
       ]
     },
     {
-      name: 'Category',
+      name: '栏目',
       menus: [
         {
           title: 'Teardown',
@@ -103,6 +103,7 @@ const CONFIG = {
           title: 'Have a question or need help? Email us at support@visualjournalcraft.com',
           href: 'mailto:support@visualjournalcraft.com'
         },
+        
         
       ]
     }

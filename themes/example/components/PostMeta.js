@@ -28,7 +28,7 @@ export const PostMeta = props => {
         {post?.type !== 'Page' && (
           <>
             <Link
-              href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
+              href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM-dd')}`}
               passHref
               className='pl-1 mr-2 cursor-pointer hover:text-gray-700 dark:hover:text-gray-200 border-b dark:border-gray-500 border-dashed'>
               {post?.publishDay}

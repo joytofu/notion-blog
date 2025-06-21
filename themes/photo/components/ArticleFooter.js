@@ -58,7 +58,7 @@ export default function ArticleFooter(props) {
           color: 'gray' // 设置文字颜色为灰色
         }}>
         <Link
-          href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM')}`}
+          href={`/archive#${formatDateFmt(post?.publishDate, 'yyyy-MM-dd')}`}
           passHref
           className='pl-1 cursor-pointer'>
           {post?.publishDay}

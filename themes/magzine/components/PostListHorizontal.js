@@ -2,6 +2,7 @@ import Link from 'next/link'
 import PostItemCard from './PostItemCard'
 import PostListEmpty from './PostListEmpty'
 import Swiper from './Swiper'
+import CategoryMap from '@/lib/categoryMap'
 
 /**
  * 博文水平列表
@@ -21,12 +22,12 @@ const PostListHorizontal = ({ title, href, posts, hasBg }) => {
       <div className='max-w-screen-3xl w-full mx-auto'>
         {/* 标题 */}
         <div className='flex justify-between items-center py-6'>
-          <h3 className='text-2xl'>{title}</h3>
+          <h3 className='text-2xl'>{CategoryMap[title] || title}</h3>
           {href && (
             <Link
               className='hidden font-bold lg:block text-lg underline'
               href={href}>
-              <span>View All</span>
+              <span>查看全部</span>
               <i className='ml-2 fas fa-arrow-right' />
             </Link>
           )}
@@ -41,7 +42,7 @@ const PostListHorizontal = ({ title, href, posts, hasBg }) => {
           <Swiper posts={posts} />
           {href && (
             <Link className='lg:hidden block text-lg underline' href={href}>
-              <span>View All</span>
+              <span>查看全部</span>
               <i className='ml-2 fas fa-arrow-right' />
             </Link>
           )}

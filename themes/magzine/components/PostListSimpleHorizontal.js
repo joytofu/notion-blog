@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import PostItemCardSimple from './PostItemCardSimple'
 import PostListEmpty from './PostListEmpty'
+import CategoryMap from '@/lib/categoryMap'
 
 /**
  * 博文水平列表;不带封面图
@@ -17,12 +18,12 @@ const PostSimpleListHorizontal = ({ title, href, posts }) => {
       <div className='max-w-screen-3xl w-full mx-auto px-4 lg:px-0'>
         {/* 标题 */}
         <div className='flex justify-between items-center py-6'>
-          <h3 className='text-2xl'>{title}</h3>
+          <h3 className='text-2xl'>{CategoryMap[title] || title}</h3>
           {href && (
             <Link
               className='hidden font-bold lg:block text-lg underline'
               href={href}>
-              <span>View All</span>
+              <span>查看全部</span>
               <i className='ml-2 fas fa-arrow-right' />
             </Link>
           )}
@@ -35,7 +36,7 @@ const PostSimpleListHorizontal = ({ title, href, posts }) => {
         </div>
         {href && (
           <Link className='lg:hidden block text-lg underline' href={href}>
-            <span>View All</span>
+            <span>查看全部</span>
             <i className='ml-2 fas fa-arrow-right' />
           </Link>
         )}

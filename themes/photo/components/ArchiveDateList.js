@@ -12,7 +12,7 @@ export default function ArchiveDateList(props) {
 
   let dates = []
   postsSortByDate.forEach(post => {
-    const date = formatDateFmt(post.publishDate, 'yyyy-MM')
+    const date = formatDateFmt(post.publishDate, 'yyyy-MM-dd')
     if (!dates[date]) {
       dates.push(date)
     }
