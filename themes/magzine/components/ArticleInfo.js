@@ -41,7 +41,18 @@ export default function ArticleInfo(props) {
         <div className='text-xl text-center'>{post?.summary}</div>
       </div>
 
-      {post?.type && !post?.type !== 'Page' && post?.pageCover && (
+      {/* Show cover image only if post type is 'post' and pageCover exists */}
+      {post?.pageCover && post?.type === 'Post' && (
+        <div className='w-full relative md:flex-shrink-0 overflow-hidden'>
+          <LazyImage
+        alt={post?.title}
+        src={post?.pageCover}
+        className='object-cover max-h-[60vh] w-full'
+          />
+        </div>
+      )}
+      
+      {/* {post?.type && !post?.type !== 'Page' && post?.pageCover && (
         <div className='w-full relative md:flex-shrink-0 overflow-hidden'>
           <LazyImage
             alt={post?.title}
@@ -49,7 +60,7 @@ export default function ArticleInfo(props) {
             className='object-cover max-h-[60vh] w-full'
           />
         </div>
-      )}
+      )} */}
     </>
   )
 }

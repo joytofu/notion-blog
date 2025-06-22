@@ -43,31 +43,31 @@ const CONFIG = {
       menus: [
         {
           title: 'About Us',
-          href: 'https://visualjournalcraft.com/about-us'
+          href: '/about-us'
         },
         {
           title: 'Privacy Policy',
-          href: 'https://visualjournalcraft.com/privacy-policy'
+          href: '/privacy-policy'
         },
         {
           title: 'Cookie Policy',
-          href: 'https://visualjournalcraft.com/cookie-policy'
+          href: '/cookie-policy'
         },
         {
           title: 'Terms and Conditions',
-          href: 'https://visualjournalcraft.com/terms-and-conditions'
+          href: '/terms-and-conditions'
         },
         {
           title: 'DMCA',
-          href: 'https://visualjournalcraft.com/dmca'
+          href: '/dmca'
         },
         {
           title: 'Disclaimer',
-          href: 'https://visualjournalcraft.com/disclaimer'
+          href: '/disclaimer'
         },
         {
           title: 'CCPA',
-          href: 'https://visualjournalcraft.com/ccpa'
+          href: '/ccpa'
         }       
       ]
     },
@@ -76,19 +76,19 @@ const CONFIG = {
       menus: [
         {
           title: 'Teardown',
-          href: 'https://visualjournalcraft.com/category/teardown'
+          href: '/category/teardown'
         },
         {
           title: 'Craft & Technique',
-          href: 'https://visualjournalcraft.com/category/craft-and-technique'
+          href: '/category/craft-and-technique'
         },
         {
           title: 'Toolkit & Inspiration',
-          href: 'https://visualjournalcraft.com/category/toolkit-and-inspiration'
+          href: '/category/toolkit-and-inspiration'
         },
         {
           title: 'Design Foundations',
-          href: 'https://visualjournalcraft.com/category/design-foundations'
+          href: '/category/design-foundations'
         }       
       ]
     },
