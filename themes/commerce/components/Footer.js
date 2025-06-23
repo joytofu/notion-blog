@@ -193,7 +193,7 @@ const Footer = props => {
 
             {/* 技术支持 */}
             <div className='text-xs text-light-500 dark:text-gray-700'>
-              © 2025 <a href='https://visualjournalcraft.com'>Visual Journal Craft</a>. All Rights Reserved.
+              © 2025 <a href='https://careerdistiller.com'>Career Distiller</a>. All Rights Reserved.
             </div>
 
             {/* 站点统计 */}

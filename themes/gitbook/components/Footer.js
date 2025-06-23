@@ -50,7 +50,7 @@ const Footer = ({ siteInfo }) => {
         <span className='px-1 busuanzi_value_site_uv'> </span>{' '}
       </span>
       <div className='text-xs font-serif'>
-        © 2025 <a href='https://visualjournalcraft.com'>Visual Journal Craft</a>. All Rights Reserved.
+        © 2025 <a href='https://careerdistiller.com'>Career Distiller</a>. All Rights Reserved.
       </div>
       {/* SEO title */}
       <h1 className='pt-1 hidden'>{siteConfig('TITLE')}</h1>

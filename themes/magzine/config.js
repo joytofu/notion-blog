@@ -1,3 +1,5 @@
+import { title } from "process"
+
 const CONFIG = {
   // 首屏信息栏按钮文字
   MAGZINE_HOME_BANNER_ENABLE: false, // 首屏右上角的宣传位
@@ -68,6 +70,10 @@ const CONFIG = {
         {
           title: 'CCPA',
           href: '/ccpa'
+        },
+        {
+          title: 'Contact Us',
+          href: '/contact'
         }       
       ]
     },
@@ -75,34 +81,24 @@ const CONFIG = {
       name: 'Categories',
       menus: [
         {
-          title: 'Teardown',
-          href: '/category/teardown'
+          title: 'Daily Distillate',
+          href: '/category/daily-distillate'
         },
         {
-          title: 'Craft & Technique',
-          href: '/category/craft-and-technique'
+          title: 'Strategic Ascent',
+          href: '/category/strategic-ascent'
         },
         {
-          title: 'Toolkit & Inspiration',
-          href: '/category/toolkit-and-inspiration'
+          title: 'Essential Toolkit',
+          href: '/category/essential-toolkit'
         },
         {
-          title: 'Design Foundations',
-          href: '/category/design-foundations'
+          title: 'Market Signals',
+          href: '/category/market-signals'
         }       
       ]
     },
-    {
-      name: 'Contact Us',
-      menus: [
-        {
-          title: 'Have a question or need help? Email us at support@visualjournalcraft.com',
-          href: 'mailto:support@visualjournalcraft.com'
-        },
-        
-        
-      ]
-    }
+    
     /* {
       name: '友情链接',
       menus: [

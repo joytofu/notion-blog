@@ -44,6 +44,7 @@ import ImpactAdsRight from '@/components/ImpactAdsRight'
 import ImpactAdsLeft from '@/components/ImpactAdsLeft'
 import AdContainer from './components/AdContainer'
 import CategoryMap from '@/lib/categoryMap'
+import ContactForm from '@/components/ContactForm'
 
 // 主题全局状态
 const ThemeGlobalMagzine = createContext()
@@ -705,6 +706,13 @@ const LayoutDashboard = props => {
     </>
   )
 }
+
+const LayoutContact = props => {
+  return (
+      <ContactForm />
+  );
+};
+
 export {
   Layout404,
   LayoutArchive,
@@ -718,5 +726,7 @@ export {
   LayoutSignUp,
   LayoutSlug,
   LayoutTagIndex,
+  LayoutContact,
   CONFIG as THEME_CONFIG
 }
+

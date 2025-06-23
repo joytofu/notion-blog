@@ -24,9 +24,9 @@ const Footer = ({ title }) => {
       className='z-10 bg-black text-white justify-center m-auto w-full p-6 relative'>
       <div className='max-w-screen-3xl w-full mx-auto '>
         {/* 信息与链接区块 */}
-        <div className='w-full flex lg:flex-row flex-col justify-between py-16'>
-          {/* <div className='gap-x-2 py-6 flex items-center'>
-            <LazyImage
+        <div className='w-full flex lg:flex-row flex-col justify-between py-8'>
+          <div className='gap-x-2 py-6 flex items-center'>
+            {/* <LazyImage
               src={siteInfo?.icon}
               className='rounded-full'
               width={40}
@@ -40,18 +40,18 @@ const Footer = ({ title }) => {
                 className='underline font-bold justify-start  '>
                 {siteConfig('AUTHOR')}
               </a>
-            </div>
-          </div> */}
+            </div> */}
+          </div>
 
           {/* 右侧链接区块 */}
-          <div className='grid grid-cols-2 lg:grid-cols-3 lg:gap-16 gap-8'>
+          <div className='grid grid-cols-2 lg:grid-cols-2 lg:gap-16 gap-8'>
             {MAGZINE_FOOTER_LINKS?.map((group, index) => {
               return (
                 <div key={index}>
-                  <div className='font-bold text-xl text-white lg:pb-8 pb-4'>
+                  <div className='font-bold text-xl text-white lg:pb-4 pb-4'>
                     {group.name}
                   </div>
-                  <div className='flex flex-col gap-y-2'>
+                  <div className='flex flex-col gap-y-4'>
                     {group?.menus?.map((menu, index) => {
                       return (
                         <div key={index}>
