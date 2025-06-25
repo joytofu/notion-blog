@@ -43,19 +43,19 @@ const CONFIG = {
       menus: [
         {
           title: 'About Us',
-          href: 'https://sapkr.com/about-us'
+          href: '/about-us'
         },
         {
           title: 'Privacy Policy',
-          href: 'https://sapkr.com/privacy-policy'
+          href: '/privacy-policy'
         },
         {
           title: 'Cookie Policy',
-          href: 'https://sapkr.com/cookie-policy'
+          href: '/cookie-policy'
         },
         {
           title: 'Terms and Conditions',
-          href: 'https://sapkr.com/terms-and-conditions'
+          href: '/terms-and-conditions'
         }
       ]
     },
@@ -63,60 +63,20 @@ const CONFIG = {
       name: 'Category',
       menus: [
         {
-          title: 'Design',
-          href: 'https://sapkr.com/category/Design'
+          title: 'Interior Spaces',
+          href: '/category/interior-spaces'
         },
         {
-          title: 'Fashion',
-          href: 'https://sapkr.com/category/Fashion'
+          title: 'Exterior Design',
+          href: '/category/exterior-design'
         },
         {
-          title: 'Art',
-          href: 'https://sapkr.com/category/Art'
-        },
-        {
-          title: 'Crafts',
-          href: 'https://sapkr.com/category/Crafts'
-        },
-        {
-          title: 'Architecture',
-          href: 'https://sapkr.com/category/Architecture'
-        },
-        {
-          title: 'Animals',
-          href: 'https://sapkr.com/category/Animals'
-        },
-        {
-          title: 'Home Decor',
-          href: 'https://sapkr.com/category/home-decor'
-        },
-        {
-          title: 'Beauty',
-          href: 'https://sapkr.com/category/Beauty'
-        },
-        {
-          title: 'DIY',
-          href: 'https://sapkr.com/category/DIY'
+          title: 'Decor & Styling',
+          href: '/category/decor-styling'
         },
         {
           title: 'Gardening',
-          href: 'https://sapkr.com/category/Gardening'
-        },
-        {
-          title: 'Wedding',
-          href: 'https://sapkr.com/category/Wedding'
-        },
-        {
-          title: 'Food & Drinks',
-          href: 'https://sapkr.com/category/Food-Drinks'
-        },
-        {
-          title: 'Vehicles',
-          href: 'https://sapkr.com/category/Vehicles'
-        },
-        {
-          title: 'Sport',
-          href: 'https://sapkr.com/category/Sport'
+          href: '/category/gardening'
         },
       ]
     },

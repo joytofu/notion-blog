@@ -2,6 +2,7 @@ import Link from 'next/link'
 import PostItemCard from './PostItemCard'
 import PostListEmpty from './PostListEmpty'
 import Swiper from './Swiper'
+import CategoryMap from '@/lib/categoryMap'
 
 /**
  * 博文水平列表
@@ -14,14 +15,17 @@ const PostListHorizontal = ({ title, href, posts, hasBg }) => {
   if (!posts || posts.length === 0) {
     return <PostListEmpty />
   }
-
+  // If title is not in CategoryMap, do not render the component
+  if (title && !CategoryMap[title]) {
+    return null
+  }
   return (
     <div
       className={`w-full py-10 px-2 lg:px-0 ${hasBg ? 'bg-[#F6F6F1] dark:bg-black' : ''}`}>
       <div className='max-w-screen-3xl w-full mx-auto'>
         {/* 标题 */}
         <div className='flex justify-between items-center py-6'>
-          <h3 className='text-2xl'>{title}</h3>
+          <h3 className='text-2xl'>{CategoryMap[title] || title}</h3>
           {href && (
             <Link
               className='hidden font-bold lg:block text-lg underline'

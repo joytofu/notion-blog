@@ -2,6 +2,7 @@ import NotionIcon from '@/components/NotionIcon'
 import { siteConfig } from '@/lib/config'
 import Link from 'next/link'
 import CategoryItem from './CategoryItem'
+import categoryMap from '@/lib/categoryMap'
 
 /**
  * 不带图片
@@ -9,13 +10,17 @@ import CategoryItem from './CategoryItem'
  * @returns
  */
 const PostItemCardSimple = ({ post }) => {
+  if (!categoryMap[post.category]) {
+    return null
+  }
+
   return (
     <div
       key={post.id}
       className='lg:mb-6 max-w-screen-3xl border-t border-gray-300 mr-8 py-2 gap-y-3 flex flex-col dark:border-gray-800 '>
       <div className='flex mr-2 items-center'>
         {siteConfig('MAGZINE_POST_LIST_CATEGORY') && (
-          <CategoryItem category={post.category} />
+          <CategoryItem category={categoryMap[post.category]} />
         )}
       </div>
 

@@ -43,6 +43,7 @@ import Image from 'next/image'
 import ImpactAdsRight from '@/components/ImpactAdsRight'
 import ImpactAdsLeft from '@/components/ImpactAdsLeft'
 import AdContainer from './components/AdContainer'
+import categoryMap from '@/lib/categoryMap'
 
 // 主题全局状态
 const ThemeGlobalMagzine = createContext()
@@ -107,18 +108,22 @@ const LayoutBase = props => {
 const LayoutIndex = props => {
   const { posts } = props
   // 最新文章 从第4个元素开始截取出4个
-  const newPosts = posts.slice(3, 7)
+  // 取出最新4个category在categoryMap中的元素
+  
+  const filteredPosts = posts.filter(post => post.category && categoryMap[post.category])
+  const topPosts = filteredPosts.slice(0, 3)
+  const latestPosts = filteredPosts.slice(4, 8)
 
   return (
     <div className='pt-10 md:pt-18'>
       {/* 首屏宣传区块 */}
-      <Hero posts={posts} />
+      <Hero posts={topPosts} />
 
       {/* 最新文章区块 */}
       <PostSimpleListHorizontal
         title='Latest Posts'
         href='/archive'
-        posts={newPosts}
+        posts={latestPosts}
       />
 
       {/* 文章分类陈列区 */}

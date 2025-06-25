@@ -33,9 +33,9 @@ const PostItemCard = ({ post }) => {
             </div>
           </Link>
         )}
-        {siteConfig('MAGZINE_POST_LIST_CATEGORY') && (
+        {/* {siteConfig('MAGZINE_POST_LIST_CATEGORY') && (
           <CategoryItem category={post.category} />
-        )}
+        )} */}
 
         <Link
           href={post?.href}
