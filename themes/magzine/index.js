@@ -361,9 +361,9 @@ const LayoutSlug = props => {
                     <div></div>
 
                     {/* 文章分类区块 */}
-                    <div>
+                    {/* <div>
                       <CategoryGroup {...props} />
-                    </div>
+                    </div> */}
 
                     <div>
                       <TouchMeCard />
