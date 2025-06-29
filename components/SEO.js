@@ -201,6 +201,11 @@ const SEO = props => {
           />
         </>
       )
+
+      {/* Bonusarrive verification */}
+      (
+        <meta name="fo-verify" content="1241c3fe-631f-4ef7-ad93-ac534c561633" />
+      )
           
       {children}
       
