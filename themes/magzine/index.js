@@ -149,7 +149,7 @@ const LayoutPostList = props => {
   return (
     <div className=' max-w-screen-3xl mx-auto w-full px-2 lg:px-0'>
       {/* 一个顶部条 */}
-      <h2 className='py-8 text-2xl font-bold'>{category || tag}</h2>
+      <h2 className='py-8 text-2xl font-bold'>{categoryMap[category] || tag}</h2>
 
       {siteConfig('POST_LIST_STYLE', 'page', NOTION_CONFIG) === 'page' ? (
         <PostListPage {...props} />
