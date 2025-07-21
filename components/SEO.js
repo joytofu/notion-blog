@@ -206,7 +206,11 @@ const SEO = props => {
       (
         <meta name="fo-verify" content="1241c3fe-631f-4ef7-ad93-ac534c561633" />
       )
-          
+
+      {/* Yeah Promos Verification */}
+      (
+        <meta name="verify-yeahpromos" content="ae047ca1ed81" />
+      )    
       {children}
       
     </Head>
