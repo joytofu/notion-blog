@@ -211,6 +211,11 @@ const SEO = props => {
       (
         <meta name="verify-yeahpromos" content="ae047ca1ed81" />
       )    
+
+      {/* Ezoic Verification */}
+      (
+        <meta name="ezoic-site-verification" content="p2iKoWnRTYnV7vE5d04P8bpb8yYsqE" />
+      )
       {children}
       
     </Head>
