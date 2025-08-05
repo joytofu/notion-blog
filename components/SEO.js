@@ -143,6 +143,22 @@ const SEO = props => {
 
       <meta name="p:domain_verify" content="1b06a0b9391fc0ef0d6b26de8a843370"/>
 
+      {/* Ezoic Scripts */}
+      (
+        <>
+          <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
+          <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
+          <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+          <script 
+            dangerouslySetInnerHTML={{
+                  __html: `
+                  window.ezstandalone = window.ezstandalone || {};
+                  ezstandalone.cmd = ezstandalone.cmd || [];
+                  `
+          }} />
+        </>          
+      )
+
       {IMPACT_SITE_VERIFICATION && (
         <meta
           name='impact-site-verification'
@@ -211,11 +227,7 @@ const SEO = props => {
       (
         <meta name="verify-yeahpromos" content="ae047ca1ed81" />
       )    
-
-      {/* Ezoic Verification */}
-      (
-        <meta name="ezoic-site-verification" content="p2iKoWnRTYnV7vE5d04P8bpb8yYsqE" />
-      )
+      
       {children}
       
     </Head>
