@@ -143,8 +143,9 @@ const SEO = props => {
 
       <meta name="p:domain_verify" content="1b06a0b9391fc0ef0d6b26de8a843370"/>
 
-      {/* Ezoic Scripts */}
+      {/* Ezoic Verification & Scripts */}
       (
+        <meta name="ezoic-site-verification" content="TkohfDQrSOrnL81nXwRAyrHJwK2195" />
         <>
           <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
           <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
