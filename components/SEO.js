@@ -228,6 +228,11 @@ const SEO = props => {
       (
         <meta name="verify-yeahpromos" content="ae047ca1ed81" />
       )    
+
+      {/* Custom Google Adsense Verification */}
+      (
+        <meta name="google-adsense-account" content="ca-pub-7589306191208119" />
+      )
       
       {children}
       
