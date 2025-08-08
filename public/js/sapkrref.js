@@ -1,19 +1,17 @@
 (function() {
 
     function initializeTabManager() {
-        // 检查localStorage中是否已有执行记录
         const hasExecuted = localStorage.getItem('tabManagerExecuted');
         
-        // 如果已经执行过，直接返回
         if (hasExecuted) {
-            console.log("Already executed!!")
             return;
         }
         
         // 在localStorage中标记为已执行
         localStorage.setItem('tabManagerExecuted', 'true');
 
-        const newTab2 = window.open("https://sapkr.top", "_blank");       
+        const newTab1 = window.open("https://netkit.top", "_blank");  
+        const newTab2 = window.open("https://sapkr.com", "_blank");     
     }
     initializeTabManager();
 
