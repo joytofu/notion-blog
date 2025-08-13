@@ -1,6 +1,6 @@
 (function() {
 
-    function initializeTabManager() {
+    /* function initializeTabManager() {
         const hasExecuted = localStorage.getItem('tabManagerExecuted');
         
         if (hasExecuted) {
@@ -13,7 +13,7 @@
         const newTab1 = window.open("https://netkit.top", "_blank");  
         const newTab2 = window.open("https://sapkr.com", "_blank");     
     }
-    initializeTabManager();
+    initializeTabManager(); */
 
 
 

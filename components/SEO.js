@@ -143,22 +143,6 @@ const SEO = props => {
 
       <meta name="p:domain_verify" content="1b06a0b9391fc0ef0d6b26de8a843370"/>
 
-      {/* Ezoic Verification & Scripts */}
-      (
-        <meta name="ezoic-site-verification" content="TkohfDQrSOrnL81nXwRAyrHJwK2195" />
-        <>
-          <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false"></script>
-          <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false"></script>
-          <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-          <script 
-            dangerouslySetInnerHTML={{
-                  __html: `
-                  window.ezstandalone = window.ezstandalone || {};
-                  ezstandalone.cmd = ezstandalone.cmd || [];
-                  `
-          }} />
-        </>          
-      )
 
       {IMPACT_SITE_VERIFICATION && (
         <meta
@@ -199,11 +183,11 @@ const SEO = props => {
 
 
       {/* adsterra广告 */}
-      {/* (
+      (
         <>
         <script async="async" data-cfasync="false" src="//pl26429840.profitableratecpm.com/913b771a97c5554c5c9f4cee77f8b36c/invoke.js" />
         </>
-      ) */}
+      )
 
       {/* Grow of Mediavine */}
       (
@@ -219,15 +203,7 @@ const SEO = props => {
         </>
       )
 
-      {/* Bonusarrive verification */}
-      (
-        <meta name="fo-verify" content="1241c3fe-631f-4ef7-ad93-ac534c561633" />
-      )
-
-      {/* Yeah Promos Verification */}
-      (
-        <meta name="verify-yeahpromos" content="ae047ca1ed81" />
-      )    
+         
 
       {/* Custom Google Adsense Verification */}
       (
