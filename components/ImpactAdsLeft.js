@@ -23,9 +23,8 @@ const ImpactAdsLeft = (props) =>{
                 <Link brand='Origin PC' rel="sponsored" href="https://www.jdoqocy.com/click-101474223-14027651?url=https%3A%2F%2Fwww.originpc.com%2Fconfigurator%2Fneuron-3500x-rts-or-9010076%3FMID%3DGG_GOOGLESHOPPING_DT250&cjsku=DT250" target="_blank" id="1669277">
                     <Image src="/images/origin-pc.webp" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link> 
-                
-                <Link brand='neutral curtains' rel="sponsored" href="https://readyhomelimited.pxf.io/09DQmJ" target="_blank">
-                    <Image src="/images/netural curtains2.jpg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
+                <Link brand='zerorez' rel="sponsored" href="https://zerorezinc.sjv.io/c/5128239/2941434/21713" target="_blank">
+                    <Image src="images/zerorez.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link> 
             </Card>
             
@@ -51,15 +50,15 @@ const ImpactAdsLeft = (props) =>{
 
     return (
         <Card className='top-20 sticky'>
-            <Link brand='homestyler' rel="sponsored" href="https://homestyler.sjv.io/c/5128239/2044747/22993" target="_blank" id="2044747">
-                <Image src="/images/homestyler.jpeg" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
+            <Link brand='neutral curtains' rel="sponsored" href="https://readyhomelimited.pxf.io/09DQmJ" target="_blank">
+                <Image src="/images/netural curtains2.jpg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
             </Link>
             <Link brand='shopify' rel="sponsored" href="https://shopify.pxf.io/c/5128239/2944578/13624" target="_blank" id="2944578">
                 <Image src="/images/shopify.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
             </Link>  
-            <Link brand='neutral curtains' rel="sponsored" href="https://readyhomelimited.pxf.io/09DQmJ" target="_blank">
-                <Image src="/images/netural curtains2.jpg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
-            </Link>                          
+            <Link brand='wecreat' rel="sponsored" href="https://wecreattechltd.pxf.io/c/5128239/3068721/26691" target="_blank" id="3068721">
+                <Image src="/images/wecreat.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
+            </Link>                      
         </Card>
     )
 

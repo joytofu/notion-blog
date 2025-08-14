@@ -53,8 +53,8 @@ const ImpactAdsRight = (props) =>{
                 <Link brand='beatbot' rel="sponsored" href="https://beatbot.pxf.io/c/5128239/2573202/24972" target="_blank" id="2573202">
                     <Image src="/images/beatbot.jpeg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link> 
-                <Link brand='Surfshark' rel="sponsored" href="https://surfshark.sjv.io/c/5128239/2584075/9043" target="_blank" id="2584075">
-                    <Image src="/images/surfshark.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
+                <Link brand='Zendure' rel="sponsored" href="https://zenduredegmbh.sjv.io/09DYRR" target="_blank">
+                    <Image src="/images/zendure.webp" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link>
                 <Link brand='Firstbase' rel="sponsored" href="https://firstbase.pxf.io/c/5128239/1685566/19451" target="_blank" id="1685566">
                     <Image src="/images/firstbase.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
@@ -117,8 +117,8 @@ const ImpactAdsRight = (props) =>{
             <Link brand='Nexo' rel="sponsored" href="https://nexo.sjv.io/c/5128239/2218912/12544" target="_blank" id="2218912">
                 <Image src="/images/nexo.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
             </Link>
-            <Link brand='puzzle.io' rel="sponsored" href="https://puzzleio.pxf.io/c/5128239/2057134/25342" target="_blank" id="2057134">
-                <Image src="/images/puzzle.io-1080x1080.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
+            <Link brand='rest' rel="sponsored" href="https://restduvetaffiliateprogram.sjv.io/c/5128239/3100759/16395" target="_blank" id="3100759">
+                <Image src="images/rest.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
             </Link> 
             <Link brand='CBD' rel="sponsored" href="https://fabcbd.sjv.io/c/5128239/2126848/26923" target="_blank" id="2126848">
                 <Image src="/images/cbd-300x250.jpeg" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
