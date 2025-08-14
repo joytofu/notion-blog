@@ -24,7 +24,7 @@ const ImpactAdsLeft = (props) =>{
                     <Image src="/images/origin-pc.webp" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link> 
                 <Link brand='zerorez' rel="sponsored" href="https://zerorezinc.sjv.io/c/5128239/2941434/21713" target="_blank">
-                    <Image src="images/zerorez.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
+                    <Image src="/images/zerorez.png" border="0" alt="" width={0} height={0} layout='responsive' style={{ maxWidth: '100%', height: 'auto', paddingBottom: '25px' }}/>
                 </Link> 
             </Card>
             
