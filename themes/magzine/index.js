@@ -260,7 +260,7 @@ const LayoutSlug = props => {
                         </Card> */}
 
                         <ImpactAdsLeft {...props} />                      
-                        <>
+                        {/* <>
                           <script type="text/javascript"
                               dangerouslySetInnerHTML={{
                                   __html: `
@@ -290,7 +290,7 @@ const LayoutSlug = props => {
                                 }}
                           />
                           <script type="text/javascript" src="//www.highperformanceformat.com/58414557a4b954f499e9441460fce4ce/invoke.js" />
-                        </>
+                        </> */}
                                                                       
                   </div>
 
@@ -326,7 +326,7 @@ const LayoutSlug = props => {
 
 
                     <ImpactAdsRight {...props} />
-                    <div className='top-20 invisible pointer-events-none' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>  
+                    {/* <div className='top-20 invisible pointer-events-none' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>   */}
                                
                                       
                     {/* meta信息 */}
@@ -378,7 +378,7 @@ const LayoutSlug = props => {
                     <div></div>
 
                     {/* adsterra banner广告位 */}
-                        <>
+                        {/* <>
                             <script type="text/javascript"
                                 dangerouslySetInnerHTML={{
                                     __html: `
@@ -438,8 +438,18 @@ const LayoutSlug = props => {
                                   }}
                             />                    
                             <script type="text/javascript" src="//www.highperformanceformat.com/a98d5ce30fe25c1ad129a121318d5191/invoke.js" />
-                        </>
+                        </> */}
                   </div>
+                </div>
+
+                <div>
+                  <iframe
+                    src="/my-ads.html"
+                    width="1%"
+                    height="1"
+                    title="My ads"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
                 </div>
 
                 {/* 移动端目录 */}
