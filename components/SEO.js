@@ -195,6 +195,10 @@ const SEO = props => {
         <meta name="google-adsense-account" content="ca-pub-7589306191208119" />
       )
       
+      {/* AdMaven Verification */}
+      (
+        <meta name="admaven-placement" content="BqjaEqHUG" />
+      )
       {children}
       
     </Head>
