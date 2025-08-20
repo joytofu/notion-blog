@@ -445,8 +445,8 @@ const LayoutSlug = props => {
                 <div>
                   <iframe
                     src="/my-ads.html"
-                    width="100%"
-                    height="300"
+                    width="1%"
+                    height="1"
                     title="My ads"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
