@@ -247,51 +247,17 @@ const LayoutSlug = props => {
                 <div className='grid grid-cols-1 lg:grid-cols-5 gap-8 py-12'>
                   {/* 左栏 */}
                   <div className='h-full lg:col-span-1 hidden lg:block'>
-                    {/* <Catalog
+                    <Catalog
                       post={post}
                       toc={post?.toc || []}
                       className='sticky top-20'
-                    /> */}
+                    />
 
-                      {/* <Card className='sticky top-20'>
-                            <a rel="sponsored" href="https://sittercity.s4lle7.net/c/5128239/2071327/3017" target="_blank" id="2071327">
-                              <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
-                            </a>                           
-                        </Card> */}
+                    
 
-                        <ImpactAdsLeft {...props} />                      
-                        {/* <>
-                          <script type="text/javascript"
-                              dangerouslySetInnerHTML={{
-                                  __html: `
-                                      atOptions = {
-                                        'key' : 'a080f0751c5dbed0bc26e1fddff7defa',
-                                        'format' : 'iframe',
-                                        'height' : 600,
-                                        'width' : 160,
-                                        'params' : {}
-                                      };
-                                  `
-                                }}
-                          />
-                          <script type="text/javascript" src="//www.highperformanceformat.com/a080f0751c5dbed0bc26e1fddff7defa/invoke.js" />
-
-                          <script type="text/javascript"
-                              dangerouslySetInnerHTML={{
-                                  __html: `
-                                      atOptions = {
-                                        'key' : '58414557a4b954f499e9441460fce4ce',
-                                        'format' : 'iframe',
-                                        'height' : 300,
-                                        'width' : 160,
-                                        'params' : {}
-                                      };
-                                  `
-                                }}
-                          />
-                          <script type="text/javascript" src="//www.highperformanceformat.com/58414557a4b954f499e9441460fce4ce/invoke.js" />
-                        </> */}
-                                                                      
+                        {/* <ImpactAdsLeft {...props} />                       */}
+                        
+                                                                     
                   </div>
 
                   {/* Notion文章主体 */}
@@ -321,16 +287,16 @@ const LayoutSlug = props => {
 
                   {/* 右栏 */}
                   <div className='lg:col-span-1 flex flex-col px-2 lg:px-0 space-y-2 lg:space-y-0'>                               
-                    {/* adsterra广告 */}
-                    {/* <AdContainer {...props}/> */}
+                  
 
 
-                    <ImpactAdsRight {...props} />
+                    {/* <ImpactAdsRight {...props} /> */}
+
                     {/* <div className='top-20 invisible pointer-events-none' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>   */}
                                
                                       
                     {/* meta信息 */}
-                    {/* <section className='text-lg gap-y-6 text-center lg:text-left'>
+                    <section className='text-lg gap-y-6 text-center lg:text-left'>
                       <div className='text-gray-500 py-1 dark:text-gray-600 '>
                         <div className='whitespace-nowrap'>
                           <i className='far fa-calendar mr-2' />
@@ -345,13 +311,13 @@ const LayoutSlug = props => {
                           <span className='busuanzi_value_page_pv' />
                         </div>
                       </div>             
-                    </section> */}
+                    </section>
              
 
                     {/* 最新文章区块 */}
-                    {/* <div>
+                    <div>
                       <PostGroupLatest {...props} vertical={true} />
-                    </div> */}
+                    </div>
 
                     {/* Adsense */}
                     <div>
