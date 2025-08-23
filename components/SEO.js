@@ -182,9 +182,11 @@ const SEO = props => {
       )}
 
         
+        
 
       {/* Custom Google Adsense Verification */}
       (
+        <meta name="google-adsense-account" content="ca-pub-9192211072764171" />
         <meta name="google-adsense-account" content="ca-pub-9192211072764171" />
         <meta name="google-adsense-account" content="ca-pub-7589306191208119" />
       )
