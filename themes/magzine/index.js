@@ -247,8 +247,7 @@ const LayoutSlug = props => {
                 <div className='grid grid-cols-1 lg:grid-cols-5 gap-8 py-12'>
                   {/* 左栏 */}
                   <div className='h-full lg:col-span-1 hidden lg:block'>
-                    <Catalog
-                    <Catalog
+                    <Catalog            
                       post={post}
                       toc={post?.toc || []}
                       className='sticky top-20'
