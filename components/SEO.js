@@ -181,24 +181,14 @@ const SEO = props => {
         </>
       )}
 
-
-      {/* adsterra广告 */}
-      (
-        <>
-        <script async="async" data-cfasync="false" src="//pl26429840.profitableratecpm.com/913b771a97c5554c5c9f4cee77f8b36c/invoke.js" />
-        </>
-      )
         
 
       {/* Custom Google Adsense Verification */}
       (
+        <meta name="google-adsense-account" content="ca-pub-9192211072764171" />
         <meta name="google-adsense-account" content="ca-pub-7589306191208119" />
       )
       
-      {/* AdMaven Verification */}
-      (
-        <meta name="admaven-placement" content="BqjaEqHUG" />
-      )
       {children}
       
     </Head>
