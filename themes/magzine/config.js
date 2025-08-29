@@ -42,19 +42,19 @@ const CONFIG = {
       name: 'Quick Links',
       menus: [
         {
-          title: 'About Us',
+          title: 'ABOUT US',
           href: '/about-us'
         },
         {
-          title: 'Privacy Policy',
+          title: 'PRIVACY POLICY',
           href: '/privacy-policy'
         },
         {
-          title: 'Cookie Policy',
+          title: 'COOKIE POLICY',
           href: '/cookie-policy'
         },
         {
-          title: 'Terms and Conditions',
+          title: 'TERMS & CONDITIONS',
           href: '/terms-and-conditions'
         }
       ]
@@ -63,29 +63,30 @@ const CONFIG = {
       name: 'Category',
       menus: [
         {
-          title: 'Interior Spaces',
-          href: '/category/interior-spaces'
+          title: 'MOVIES & TV',
+          href: '/category/movies-tv'
         },
         {
-          title: 'Exterior Design',
-          href: '/category/exterior-design'
+          title: 'MUSIC',
+          href: '/category/music'
         },
         {
-          title: 'Decor & Styling',
-          href: '/category/decor-styling'
+          title: 'CULTURE & LIFESTYLE',
+          href: '/category/culture-lifestyle'
         },
         {
-          title: 'Gardening',
-          href: '/category/gardening'
+          title: 'GAMES & TECH',
+          href: '/category/games-tech'
         },
+        
       ]
     },
     {
-      name: 'Contact Us',
+      name: 'CONTACT US',
       menus: [
         {
-          title: 'Have a question or need help? Email us at support@sapkr.com',
-          href: 'mailto:support@sapkr.com'
+          title: 'Have a question or need help? Email us at support@yesterdayly.com',
+        
         },
         
       ]
