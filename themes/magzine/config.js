@@ -86,7 +86,7 @@ const CONFIG = {
       menus: [
         {
           title: 'Have a question or need help? Email us at support@yesterdayly.com',
-          href: ''
+          href: '/'
       
         },
         
