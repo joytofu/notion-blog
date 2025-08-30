@@ -85,7 +85,7 @@ const CONFIG = {
       menus: [
         {
           title: 'Have a question or need help? Email us at support@sapkr.com',
-          href: ''
+          href: '/'
         },
         
       ]
