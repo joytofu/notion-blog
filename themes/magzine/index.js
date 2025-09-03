@@ -252,47 +252,10 @@ const LayoutSlug = props => {
                       toc={post?.toc || []}
                       className='sticky top-20'
                     />
-
-                      {/* <Card className='sticky top-20'>
-                            <a rel="sponsored" href="https://sittercity.s4lle7.net/c/5128239/2071327/3017" target="_blank" id="2071327">
-                              <Image src="/images/sittercity-cuddles-320x1200.png" alt="sittercity" width={0} height={0} layout='responsive' style={{ maxWidth: '90%', height: 'auto' }}/>
-                            </a>                           
-                        </Card> */}
+                   
 
                         {/* <ImpactAdsLeft {...props} />     */}
-
-
-                        {/* <>
-                          <script type="text/javascript"
-                              dangerouslySetInnerHTML={{
-                                  __html: `
-                                      atOptions = {
-                                        'key' : 'a080f0751c5dbed0bc26e1fddff7defa',
-                                        'format' : 'iframe',
-                                        'height' : 600,
-                                        'width' : 160,
-                                        'params' : {}
-                                      };
-                                  `
-                                }}
-                          />
-                          <script type="text/javascript" src="//www.highperformanceformat.com/a080f0751c5dbed0bc26e1fddff7defa/invoke.js" />
-
-                          <script type="text/javascript"
-                              dangerouslySetInnerHTML={{
-                                  __html: `
-                                      atOptions = {
-                                        'key' : '58414557a4b954f499e9441460fce4ce',
-                                        'format' : 'iframe',
-                                        'height' : 300,
-                                        'width' : 160,
-                                        'params' : {}
-                                      };
-                                  `
-                                }}
-                          />
-                          <script type="text/javascript" src="//www.highperformanceformat.com/58414557a4b954f499e9441460fce4ce/invoke.js" />
-                        </> */}
+                        
                                                                       
                   </div>
 
@@ -327,8 +290,7 @@ const LayoutSlug = props => {
 
                     {/* <ImpactAdsRight {...props} /> */}
 
-                
-                    {/* <div className='top-20 invisible pointer-events-none' id="container-913b771a97c5554c5c9f4cee77f8b36c"></div>   */}
+              
                                
                                       
                     {/* meta信息 */}
@@ -380,73 +342,10 @@ const LayoutSlug = props => {
 
                     {/* 底部留白 */}
                     <div></div>
-
-                    {/* adsterra banner广告位 */}
-                        {/* <>
-                            <script type="text/javascript"
-                                dangerouslySetInnerHTML={{
-                                    __html: `
-                                        atOptions = {
-                                          'key' : '97ba2013d6be0e3903a65b4c72378c7d',
-                                          'format' : 'iframe',
-                                          'height' : 90,
-                                          'width' : 728,
-                                          'params' : {}
-                                        };
-                                    `
-                                  }}
-                            />                    
-                            <script type="text/javascript" src="//www.highperformanceformat.com/97ba2013d6be0e3903a65b4c72378c7d/invoke.js" />
-
-                            <script type="text/javascript"
-                                dangerouslySetInnerHTML={{
-                                    __html: `
-                                        atOptions = {
-                                          'key' : '214cc6cb963148a564524c55f0e5badc',
-                                          'format' : 'iframe',
-                                          'height' : 60,
-                                          'width' : 468,
-                                          'params' : {}
-                                        };
-                                    `
-                                  }}
-                            />                    
-                            <script type="text/javascript" src="//www.highperformanceformat.com/214cc6cb963148a564524c55f0e5badc/invoke.js" />
-
-                            <script type="text/javascript"
-                                dangerouslySetInnerHTML={{
-                                    __html: `
-                                        atOptions = {
-                                          'key' : '6d63fcf51208307497c0e4b6817a12fd',
-                                          'format' : 'iframe',
-                                          'height' : 250,
-                                          'width' : 300,
-                                          'params' : {}
-                                        };
-                                    `
-                                  }}
-                            />                    
-                            <script type="text/javascript" src="//www.highperformanceformat.com/6d63fcf51208307497c0e4b6817a12fd/invoke.js" />
-
-                            <script type="text/javascript"
-                                dangerouslySetInnerHTML={{
-                                    __html: `
-                                        atOptions = {
-                                          'key' : 'a98d5ce30fe25c1ad129a121318d5191',
-                                          'format' : 'iframe',
-                                          'height' : 50,
-                                          'width' : 320,
-                                          'params' : {}
-                                        };
-                                    `
-                                  }}
-                            />                    
-                            <script type="text/javascript" src="//www.highperformanceformat.com/a98d5ce30fe25c1ad129a121318d5191/invoke.js" />
-                        </> */}
                   </div>
                 </div>
 
-                <div>
+                {/* <div>
                   <iframe
                     src="/my-ads.html"
                     width="1%"
@@ -454,7 +353,7 @@ const LayoutSlug = props => {
                     title="My ads"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
-                </div>
+                </div> */}
 
                 {/* 移动端目录 */}
                 <CatalogFloat {...props} />

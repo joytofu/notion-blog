@@ -5,9 +5,9 @@ const CONFIG = {
   MAGZINE_HOME_BUTTON_URL: '/about',
   MAGZINE_HOME_BUTTON_TEXT: 'Dig Deeper',
 
-  MAGZINE_HOME_HIDDEN_CATEGORY: '分享杂文', //不希望在首页展示的文章分类，用英文逗号隔开
+  MAGZINE_HOME_HIDDEN_CATEGORY: '', //不希望在首页展示的文章分类，用英文逗号隔开
 
-  MAGZINE_HOME_TITLE: 'Sapkr',
+  MAGZINE_HOME_TITLE: 'YESTERDAYLY',
   MAGZINE_HOME_DESCRIPTION:
     '',
   MAGZINE_HOME_TIPS: '',  
@@ -31,9 +31,9 @@ const CONFIG = {
 
   // 文章页面联系卡
   MAGZINE_SOCIAL_CARD: false, // 是否显示右侧，点击加入社群按钮
-  MAGZINE_SOCIAL_CARD_TITLE_1: '交流频道',
-  MAGZINE_SOCIAL_CARD_TITLE_2: '加入社群讨论分享',
-  MAGZINE_SOCIAL_CARD_TITLE_3: '点击加入社群',
+  MAGZINE_SOCIAL_CARD_TITLE_1: '',
+  MAGZINE_SOCIAL_CARD_TITLE_2: '',
+  MAGZINE_SOCIAL_CARD_TITLE_3: '',
   MAGZINE_SOCIAL_CARD_URL: '',
 
   // 页脚菜单
