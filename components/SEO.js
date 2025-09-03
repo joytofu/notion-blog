@@ -182,13 +182,16 @@ const SEO = props => {
       )}
 
         
-        
-
       {/* Custom Google Adsense Verification */}
       (
         <meta name="google-adsense-account" content="ca-pub-9192211072764171" />
       
         <meta name="google-adsense-account" content="ca-pub-7589306191208119" />
+      )
+
+      {/* Partnerboost Verification */}
+      (
+        <meta name="partnerboostverifycode" content="32dc01246faccb7f5b3cad5016dd5033" />
       )
       
       {children}
