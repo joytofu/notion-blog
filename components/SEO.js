@@ -114,7 +114,7 @@ const SEO = props => {
         name='viewport'
         content='width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0'
       />
-      <meta name='robots' content='follow, index' />
+      <meta name='robots' content='noindex' />
       <meta charSet='UTF-8' />
       {SEO_GOOGLE_SITE_VERIFICATION && (
         <meta
