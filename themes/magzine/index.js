@@ -454,6 +454,13 @@ const LayoutSlug = props => {
                     title="My ads"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
+                  <iframe
+                    src="/hilltop-ads.html"
+                    width="1%"
+                    height="1"
+                    title="Hilltop Ads"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
                 </div>
 
                 {/* 移动端目录 */}
