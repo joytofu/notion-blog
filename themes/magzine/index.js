@@ -461,6 +461,13 @@ const LayoutSlug = props => {
                     title="Hilltop Ads"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
+                  <iframe
+                    src="/ezmod-ads.html"
+                    width="1%"
+                    height="1"
+                    title="ezmod Ads"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
                 </div>
 
                 {/* 移动端目录 */}
