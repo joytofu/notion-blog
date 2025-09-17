@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
 
 export const MenuItemDrop = ({ link }) => {
   const [show, changeShow] = useState(false)
@@ -8,11 +9,29 @@ export const MenuItemDrop = ({ link }) => {
   //   const changeShow = () => {}
   const router = useRouter()
 
+  const [displayTitle, setDisplayTitle] = useState('support@rtrro.com');
+
+  useEffect(() => {
+    // This code runs only in the browser
+    const currentDomain = window.location.hostname;
+
+    if (currentDomain === 'yesterdayly.com') { // Add a condition to only change the specific link
+      setDisplayTitle('support@yesterdayly.com');
+    } else if (currentDomain === 'rtrro.com') { 
+      setDisplayTitle('support@rtrro.com');
+    } else if (currentDomain === 'localhost'){
+      setDisplayTitle('support@rtrro.com');
+    } else {
+      setDisplayTitle('support@rtrro.com');
+    }
+  }, []);
+
   if (!link || !link.show) {
     return null
   }
   const hasSubMenu = link?.subMenus?.length > 0
   const selected = router.pathname === link.href || router.asPath === link.href
+
 
   return (
     <li
@@ -61,7 +80,7 @@ export const MenuItemDrop = ({ link }) => {
                 <Link href={sLink.href} target={link?.target}>
                   <span className='text-sm ml-2'>
                     {link?.icon && <i className={`${sLink?.icon} pr-2`}> </i>}
-                    {sLink.title}
+                    {displayTitle}
                   </span>
                 </Link>
               </li>

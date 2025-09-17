@@ -4,7 +4,29 @@ import { loadExternalResource } from '@/lib/utils'
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { useEffect,useState } from 'react'
+
+function getSiteConfig(domain) {
+  if (domain === 'yesterdayly.com') {
+    return {
+      TITLE: 'YESTERDAYLY',
+    };
+  }
+  if (domain === 'rtrro.com') {
+    return {
+      TITLE: 'RTRRO',
+    };
+  }
+  if (domain === 'localhost') {
+    return {
+      TITLE: 'RTRRO',
+    };
+  }
+  // Default configuration
+  return {
+    TITLE: 'RTRRO',
+  };
+}
 
 /**
  * 页面的Head头，有用于SEO
@@ -21,6 +43,8 @@ const SEO = props => {
   const router = useRouter()
   const meta = getSEOMeta(props, router, useGlobal()?.locale)
   const webFontUrl = siteConfig('FONT_URL')
+
+  const [siteTitle, setSiteTitle] = useState('RTRRO');
 
   useEffect(() => {
     // 使用WebFontLoader字体加载
@@ -39,6 +63,10 @@ const SEO = props => {
         })
       }
     })
+
+    const domain = window.location.hostname;
+    const siteConfig = getSiteConfig(domain);
+    setSiteTitle(siteConfig.TITLE);
   }, [])
 
   // SEO关键词
@@ -51,7 +79,7 @@ const SEO = props => {
     url = `${url}/${meta.slug}`
     image = meta.image || '/bg_image.jpg'
   }
-  const TITLE = siteConfig('TITLE')
+  const TITLE = siteTitle
   const title = meta?.title || TITLE
   const description = meta?.description || `${siteInfo?.description}`
   const type = meta?.type || 'website'
@@ -103,12 +131,13 @@ const SEO = props => {
   )
 
   const FACEBOOK_PAGE = siteConfig('FACEBOOK_PAGE', null, NOTION_CONFIG)
+  
 
   const AUTHOR = siteConfig('AUTHOR')
   return (
     <Head>
       <link rel='icon' href={favicon} />
-      <title>{title}</title>
+      <title>{siteTitle}</title>
       <meta name='theme-color' content={BACKGROUND_DARK} />
       <meta
         name='viewport'
@@ -187,6 +216,7 @@ const SEO = props => {
     </Head>
   )
 }
+
 /**
  * 获取SEO信息
  * @param {*} props
