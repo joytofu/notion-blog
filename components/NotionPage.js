@@ -165,17 +165,28 @@ const NotionPage = ({ post, className }) => {
     if (post?.blockMap && typeof window !== 'undefined') {
       const hostname = window.location.hostname;
       
-      // Get the first part of the domain (e.g., "abc" from "abc.domain.com")
-      // This also handles 'localhost' correctly.
-      const domainPrefix = hostname.split('.')[0].toUpperCase();
+      const hostnameWithoutPort = hostname.split(':')[0]; 
+      const domainPrefix = hostnameWithoutPort.split('.')[0];
+      
+      // Define both uppercase and lowercase versions of the domain prefix
+      const domainUpper = domainPrefix.toUpperCase();
+      const domainLower = domainPrefix.toLowerCase();
 
-      const newRecordMap = replacePlaceholderInRecordMap(
+      // First, replace the uppercase placeholder
+      const mapWithUpper = replacePlaceholderInRecordMap(
         post.blockMap,
         '{{domain}}',
-        domainPrefix
+        domainUpper
       );
 
-      setProcessedRecordMap(newRecordMap);
+      // Then, using the result from the first replacement, replace the lowercase placeholder
+      const finalRecordMap = replacePlaceholderInRecordMap(
+        mapWithUpper,
+        '{{domain_lower}}',
+        domainLower
+      );
+
+      setProcessedRecordMap(finalRecordMap);
     }
   }, [post?.blockMap]);
 
