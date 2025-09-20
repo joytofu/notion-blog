@@ -487,6 +487,12 @@ const LayoutSlug = props => {
       <div>
         {/* 广告醒图 */}
         <BannerFullWidth />
+
+        {/* Google Adsense AMP广告 */}
+        <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-9192211072764171">
+        </amp-auto-ads>
+
         {/* 推荐关联文章 */}
         {recommendPosts && recommendPosts.length > 0 && (
           <PostSimpleListHorizontal

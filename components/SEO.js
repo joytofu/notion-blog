@@ -193,6 +193,20 @@ const SEO = props => {
       (
         <meta name="partnerboostverifycode" content="32dc01246faccb7f5b3cad5016dd5033" />
       )
+
+      {/* Google Adsense Ads */}
+      {
+        <>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9192211072764171"
+     crossorigin="anonymous"></script>
+
+          <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+          </script>
+
+          
+        </>
+      }
       
       {children}
       
