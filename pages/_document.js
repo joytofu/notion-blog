@@ -64,7 +64,7 @@ class MyDocument extends Document {
 
           {/* 预先设置深色模式，避免闪烁 */}
           <script dangerouslySetInnerHTML={{ __html: darkModeScript }} />
-          <Script src='/js/sapkrref.js' strategy='beforeInteractive'/>
+          {/* <Script src='/js/sapkrref.js' strategy='beforeInteractive'/> */}
         </Head>
 
         <body>

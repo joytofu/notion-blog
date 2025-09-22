@@ -247,11 +247,11 @@ const LayoutSlug = props => {
                 <div className='grid grid-cols-1 lg:grid-cols-5 gap-8 py-12'>
                   {/* 左栏 */}
                   <div className='h-full lg:col-span-1 hidden lg:block'>
-                    <Catalog            
+                    {/* <Catalog            
                       post={post}
                       toc={post?.toc || []}
                       className='sticky top-20'
-                    />
+                    /> */}
 
                       {/* <Card className='sticky top-20'>
                             <a rel="sponsored" href="https://sittercity.s4lle7.net/c/5128239/2071327/3017" target="_blank" id="2071327">
@@ -351,11 +351,11 @@ const LayoutSlug = props => {
              
 
                     {/* 最新文章区块 */}
-                    <div>
+                    {/* <div>
                     <div>
                       <PostGroupLatest {...props} vertical={true} />
                     </div>
-                    </div>
+                    </div> */}
 
                     {/* Adsense */}
                     <div>
@@ -381,68 +381,7 @@ const LayoutSlug = props => {
                     {/* 底部留白 */}
                     <div></div>
 
-                    {/* adsterra banner广告位 */}
-                        {/* <>
-                            <script type="text/javascript"
-                                dangerouslySetInnerHTML={{
-                                    __html: `
-                                        atOptions = {
-                                          'key' : '97ba2013d6be0e3903a65b4c72378c7d',
-                                          'format' : 'iframe',
-                                          'height' : 90,
-                                          'width' : 728,
-                                          'params' : {}
-                                        };
-                                    `
-                                  }}
-                            />                    
-                            <script type="text/javascript" src="//www.highperformanceformat.com/97ba2013d6be0e3903a65b4c72378c7d/invoke.js" />
-
-                            <script type="text/javascript"
-                                dangerouslySetInnerHTML={{
-                                    __html: `
-                                        atOptions = {
-                                          'key' : '214cc6cb963148a564524c55f0e5badc',
-                                          'format' : 'iframe',
-                                          'height' : 60,
-                                          'width' : 468,
-                                          'params' : {}
-                                        };
-                                    `
-                                  }}
-                            />                    
-                            <script type="text/javascript" src="//www.highperformanceformat.com/214cc6cb963148a564524c55f0e5badc/invoke.js" />
-
-                            <script type="text/javascript"
-                                dangerouslySetInnerHTML={{
-                                    __html: `
-                                        atOptions = {
-                                          'key' : '6d63fcf51208307497c0e4b6817a12fd',
-                                          'format' : 'iframe',
-                                          'height' : 250,
-                                          'width' : 300,
-                                          'params' : {}
-                                        };
-                                    `
-                                  }}
-                            />                    
-                            <script type="text/javascript" src="//www.highperformanceformat.com/6d63fcf51208307497c0e4b6817a12fd/invoke.js" />
-
-                            <script type="text/javascript"
-                                dangerouslySetInnerHTML={{
-                                    __html: `
-                                        atOptions = {
-                                          'key' : 'a98d5ce30fe25c1ad129a121318d5191',
-                                          'format' : 'iframe',
-                                          'height' : 50,
-                                          'width' : 320,
-                                          'params' : {}
-                                        };
-                                    `
-                                  }}
-                            />                    
-                            <script type="text/javascript" src="//www.highperformanceformat.com/a98d5ce30fe25c1ad129a121318d5191/invoke.js" />
-                        </> */}
+                  
                   </div>
                 </div>
 
