@@ -10,13 +10,38 @@ import { useGlobal } from '@/lib/global'
 import Link from 'next/link'
 import CONFIG from '../config'
 import SocialButton from './SocialButton'
+import { useState, useEffect } from 'react';
 
 /**
  * 网页底脚
  */
 const Footer = ({ title }) => {
   const { siteInfo } = useGlobal()
-  const MAGZINE_FOOTER_LINKS = siteConfig('MAGZINE_FOOTER_LINKS', [], CONFIG)
+  // const MAGZINE_FOOTER_LINKS = siteConfig('MAGZINE_FOOTER_LINKS', [], CONFIG)
+
+  const [footerLinks, setFooterLinks] = useState([]);
+
+  useEffect(() => {
+    // 3. This code runs only in the browser after the component has mounted.
+    const domain = window.location.hostname;
+    const supportEmail = `support@${domain}`;
+
+    // Create a deep copy of the links to avoid directly changing the original CONFIG object
+    const updatedLinks = JSON.parse(JSON.stringify(CONFIG.MAGZINE_FOOTER_LINKS));
+
+    // Find the 'CONTACT US' group
+    const contactGroup = updatedLinks.find(group => group.name === 'CONTACT US');
+    
+    // If the group and its menu exist, update them dynamically
+    if (contactGroup && contactGroup.menus && contactGroup.menus.length > 0) {
+      contactGroup.menus[0].title = `Have a question or need help? Email us at ${supportEmail}`;
+      contactGroup.menus[0].href = `mailto:${supportEmail}`;
+    }
+
+    // 4. Update the state, which will cause the component to re-render with the dynamic links
+    setFooterLinks(updatedLinks);
+
+  }, []);
 
   return (
     <footer
@@ -45,7 +70,7 @@ const Footer = ({ title }) => {
 
           {/* 右侧链接区块 */}
           <div className='grid grid-cols-2 lg:grid-cols-3 lg:gap-16 gap-8'>
-            {MAGZINE_FOOTER_LINKS?.map((group, index) => {
+            {footerLinks?.map((group, index) => {
               return (
                 <div key={index}>
                   <div className='font-bold text-xl text-white lg:pb-8 pb-4'>

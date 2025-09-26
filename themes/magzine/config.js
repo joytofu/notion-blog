@@ -7,7 +7,7 @@ const CONFIG = {
 
   MAGZINE_HOME_HIDDEN_CATEGORY: '分享杂文', //不希望在首页展示的文章分类，用英文逗号隔开
 
-  MAGZINE_HOME_TITLE: 'Sapkr',
+  MAGZINE_HOME_TITLE: 'Pixomni',
   MAGZINE_HOME_DESCRIPTION:
     '',
   MAGZINE_HOME_TIPS: '',  
@@ -39,49 +39,49 @@ const CONFIG = {
   // 页脚菜单
   MAGZINE_FOOTER_LINKS: [
     {
-      name: 'Quick Links',
+      name: 'QUICK LINKS',
       menus: [
         {
-          title: 'About Us',
+          title: 'ABOUT US',
           href: '/about-us'
         },
         {
-          title: 'Privacy Policy',
+          title: 'PRIVACY POLICY',
           href: '/privacy-policy'
         },
         {
-          title: 'Cookie Policy',
+          title: 'COOKIE POLICY',
           href: '/cookie-policy'
         },
         {
-          title: 'Terms and Conditions',
+          title: 'TERMS & CONDITIONS',
           href: '/terms-and-conditions'
         }
       ]
     },
     {
-      name: 'Category',
+      name: 'CATEGORY',
       menus: [
         {
-          title: 'Interior Spaces',
+          title: 'INTERIOR SPACES',
           href: '/category/interior-spaces'
         },
         {
-          title: 'Exterior Design',
+          title: 'EXTERIOR DESIGN',
           href: '/category/exterior-design'
         },
         {
-          title: 'Decor & Styling',
+          title: 'DECOR & STYLING',
           href: '/category/decor-styling'
         },
         {
-          title: 'Gardening',
+          title: 'GARDENING',
           href: '/category/gardening'
         },
       ]
     },
     {
-      name: 'Contact Us',
+      name: 'CONTACT US',
       menus: [
         {
           title: 'Have a question or need help? Email us at support@sapkr.com',

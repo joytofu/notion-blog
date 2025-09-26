@@ -4,7 +4,23 @@ import { loadExternalResource } from '@/lib/utils'
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { useEffect,useState } from 'react'
+
+
+function getSiteConfig() {
+  const currentDomain = window.location.hostname;
+  if (currentDomain === 'localhost'){
+    return {
+      TITLE: 'LOCALHOST',
+    };
+  }else{
+    const hostnameWithoutPort = currentDomain.split(':')[0]; 
+    const domainPrefix = hostnameWithoutPort.split('.')[0];
+    return {
+      TITLE: domainPrefix.toUpperCase(),
+    };
+  };
+}
 
 /**
  * 页面的Head头，有用于SEO
@@ -21,6 +37,8 @@ const SEO = props => {
   const router = useRouter()
   const meta = getSEOMeta(props, router, useGlobal()?.locale)
   const webFontUrl = siteConfig('FONT_URL')
+
+  const [siteTitle, setSiteTitle] = useState('PIXOMNI');
 
   useEffect(() => {
     // 使用WebFontLoader字体加载
@@ -39,6 +57,9 @@ const SEO = props => {
         })
       }
     })
+
+    const siteConfig = getSiteConfig();
+    setSiteTitle(siteConfig.TITLE);
   }, [])
 
   // SEO关键词
@@ -51,7 +72,7 @@ const SEO = props => {
     url = `${url}/${meta.slug}`
     image = meta.image || '/bg_image.jpg'
   }
-  const TITLE = siteConfig('TITLE')
+  const TITLE = siteTitle
   const title = meta?.title || TITLE
   const description = meta?.description || `${siteInfo?.description}`
   const type = meta?.type || 'website'
@@ -108,7 +129,7 @@ const SEO = props => {
   return (
     <Head>
       <link rel='icon' href={favicon} />
-      <title>{title}</title>
+      <title>{siteTitle}</title>
       <meta name='theme-color' content={BACKGROUND_DARK} />
       <meta
         name='viewport'

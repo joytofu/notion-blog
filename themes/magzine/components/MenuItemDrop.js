@@ -1,12 +1,20 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export const MenuItemDrop = ({ link }) => {
   const [show, changeShow] = useState(false)
   //   const show = true
   //   const changeShow = () => {}
   const router = useRouter()
+
+  const [displayTitle, setDisplayTitle] = useState('support@rtrro.com');
+
+  useEffect(() => {
+    // This code runs only in the browser
+    const currentDomain = window.location.hostname;
+    setDisplayTitle(`support@${currentDomain}`)
+  }, []);
 
   if (!link || !link.show) {
     return null
@@ -61,7 +69,7 @@ export const MenuItemDrop = ({ link }) => {
                 <Link href={sLink.href} target={link?.target}>
                   <span className='text-sm ml-2'>
                     {link?.icon && <i className={`${sLink?.icon} pr-2`}> </i>}
-                    {sLink.title}
+                    {displayTitle}
                   </span>
                 </Link>
               </li>

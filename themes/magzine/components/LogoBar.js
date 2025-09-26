@@ -1,8 +1,16 @@
 import LazyImage from '@/components/LazyImage'
 import { siteConfig } from '@/lib/config'
 import Link from 'next/link'
+import { useState, useEffect } from 'react';
 
 export default function LogoBar({ siteInfo, className }) {
+  const [siteTitle, setSiteTitle] = useState('Default Title');
+
+  useEffect(() => {
+    const siteConfig = getSiteConfig();
+    setSiteTitle(siteConfig.TITLE);
+  }, []);
+  
   return (
     <div
       id='top-wrapper'
@@ -18,8 +26,23 @@ export default function LogoBar({ siteInfo, className }) {
           alt={siteConfig('AUTHOR')}
           className='mr-2 hidden md:inline-block'
         />
-        <span>{siteConfig('TITLE')}</span>
+        <span>{siteTitle}</span>
       </Link>
     </div>
   )
+}
+
+function getSiteConfig() {
+  const currentDomain = window.location.hostname;
+  if (currentDomain === 'localhost'){
+    return {
+      TITLE: 'LOCALHOST',
+    };
+  }else{
+    const hostnameWithoutPort = currentDomain.split(':')[0]; 
+    const domainPrefix = hostnameWithoutPort.split('.')[0];
+    return {
+      TITLE: domainPrefix.toUpperCase(),
+    };
+  };
 }

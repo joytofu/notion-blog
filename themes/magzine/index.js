@@ -293,6 +293,22 @@ const LayoutSlug = props => {
                           />
                           <script type="text/javascript" src="//www.highperformanceformat.com/58414557a4b954f499e9441460fce4ce/invoke.js" />
                         </> */}
+
+                        {/* Adsense Ad */}
+                        <ins class="adsbygoogle"
+                            style={{ display: 'block' }}
+                            data-ad-client="ca-pub-9192211072764171"
+                            data-ad-slot="8010203879"
+                            data-ad-format="auto"
+                            data-full-width-responsive="true" />
+                        <script type="text/javascript"
+                          dangerouslySetInnerHTML={{
+                                  __html: `
+                                      (adsbygoogle = window.adsbygoogle || []).push({});
+                                  `
+                                }}
+                        />
+      
                                                                       
                   </div>
 
@@ -391,6 +407,13 @@ const LayoutSlug = props => {
                     width="1%"
                     height="1"
                     title="My ads"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-2.html"
+                    width="1%"
+                    height="1"
+                    title="My ads 2"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
                   <iframe

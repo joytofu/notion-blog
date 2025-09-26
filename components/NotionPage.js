@@ -4,8 +4,48 @@ import { isBrowser, loadExternalResource } from '@/lib/utils'
 import mediumZoom from '@fisch0920/medium-zoom'
 import 'katex/dist/katex.min.css'
 import dynamic from 'next/dynamic'
-import { useEffect, useRef } from 'react'
+// import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { NotionRenderer } from 'react-notion-x'
+
+function replacePlaceholderInRecordMap(recordMap, placeholder, value) {
+  if (!recordMap || !value) {
+    return recordMap;
+  }
+
+  // Create a deep copy to ensure the original data prop is not mutated.
+  const newRecordMap = JSON.parse(JSON.stringify(recordMap));
+  const placeholderRegex = new RegExp(placeholder, 'g');
+
+  // Iterate over all entries in the 'block' object of the recordMap
+  for (const blockId in newRecordMap.block) {
+    const block = newRecordMap.block[blockId]?.value;
+    if (!block) continue;
+
+    // Replace in block titles (covers paragraphs, headings, lists, etc.)
+    if (block.properties?.title) {
+      block.properties.title = block.properties.title.map(segment => {
+        // A segment is an array, e.g., ['text to modify']
+        if (typeof segment[0] === 'string') {
+          segment[0] = segment[0].replace(placeholderRegex, value);
+        }
+        return segment;
+      });
+    }
+
+    // Replace in image, video, or embed captions
+    if (block.properties?.caption) {
+      block.properties.caption = block.properties.caption.map(segment => {
+        if (typeof segment[0] === 'string') {
+          segment[0] = segment[0].replace(placeholderRegex, value);
+        }
+        return segment;
+      });
+    }
+  }
+
+  return newRecordMap;
+}
 
 /**
  * 整个站点的核心组件
@@ -29,6 +69,8 @@ const NotionPage = ({ post, className }) => {
 
   const zoomRef = useRef(zoom ? zoom.clone() : null)
   const IMAGE_ZOOM_IN_WIDTH = siteConfig('IMAGE_ZOOM_IN_WIDTH', 1200)
+  const [processedRecordMap, setProcessedRecordMap] = useState(post?.blockMap);
+  
   // 页面首次打开时执行的勾子
   useEffect(() => {
     // 检测当前的url并自动滚动到对应目标
@@ -116,12 +158,42 @@ const NotionPage = ({ post, className }) => {
     return () => clearTimeout(timer)
   }, [post])
 
+  useEffect(() => {
+    // This effect runs on the client-side after the component mounts.
+    // The check for 'window' ensures it doesn't run during server-side rendering.
+    if (post?.blockMap && typeof window !== 'undefined') {
+      const hostname = window.location.hostname;
+      
+      // Get the first part of the domain (e.g., "abc" from "abc.domain.com")
+      // This also handles 'localhost' correctly.
+      const hostnameWithoutPort = hostname.split(':')[0]; 
+      const domainPrefix = hostnameWithoutPort.split('.')[0];
+      const domainUpper = domainPrefix.toUpperCase();
+      const domainLower = domainPrefix.toLowerCase();
+
+      const mapWithUpper = replacePlaceholderInRecordMap(
+        post.blockMap,
+        '{{domain}}',
+        domainUpper,
+      );
+
+      const finalRecordMap = replacePlaceholderInRecordMap(
+        mapWithUpper,
+        '{{domain_lower}}',
+        domainLower
+      );
+
+      setProcessedRecordMap(finalRecordMap);
+    }
+  }, [post?.blockMap]);
+
   return (
     <div
       id='notion-article'
       className={`mx-auto overflow-hidden ${className || ''}`}>
       <NotionRenderer
-        recordMap={post?.blockMap}
+        //recordMap={post?.blockMap}
+        recordMap={processedRecordMap}
         mapPageUrl={mapPageUrl}
         mapImageUrl={mapImgUrl}
         components={{
