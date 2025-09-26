@@ -295,21 +295,18 @@ const LayoutSlug = props => {
                         </> */}
 
                         {/* Adsense Ad */}
-                        <ins class="adsbygoogle"
-                            style={{ display: 'block' }}
-                            data-ad-client="ca-pub-9192211072764171"
-                            data-ad-slot="8010203879"
-                            data-ad-format="auto"
-                            data-full-width-responsive="true" />
-                        <script type="text/javascript"
-                          dangerouslySetInnerHTML={{
-                                  __html: `
-                                      (adsbygoogle = window.adsbygoogle || []).push({});
-                                  `
-                                }}
-                        />
-      
-                                                                      
+                        <div>
+                          <AdSlot />
+                          <amp-ad width="100vw" height="320"
+                              type="adsense"
+                              data-ad-client="ca-pub-9192211072764171"
+                              data-ad-slot="8010203879"
+                              data-auto-format="rspv"
+                              data-full-width="">
+                            <div overflow=""></div>
+                          </amp-ad>
+                        </div>
+    
                   </div>
 
                   {/* Notion文章主体 */}
@@ -333,6 +330,7 @@ const LayoutSlug = props => {
 
                       {/* 评论区 */}
                       <Comment frontMatter={post} />
+                      <AdSlot />
                     </section>
 
                   </article>
@@ -376,6 +374,14 @@ const LayoutSlug = props => {
                     {/* Adsense */}
                     <div>
                       <AdSlot />
+                      <amp-ad width="100vw" height="320"
+                          type="adsense"
+                          data-ad-client="ca-pub-9192211072764171"
+                          data-ad-slot="1077075967"
+                          data-auto-format="mcrspv"
+                          data-full-width="">
+                        <div overflow=""></div>
+                      </amp-ad>
                     </div>
 
                     {/* 留白 */}
@@ -391,7 +397,7 @@ const LayoutSlug = props => {
                     </div>
 
                     <div>
-                      <WWAds />
+                      <AdSlot />
                     </div>
 
                     {/* 底部留白 */}
@@ -414,6 +420,13 @@ const LayoutSlug = props => {
                     width="1%"
                     height="1"
                     title="My ads 2"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-3.html"
+                    width="1%"
+                    height="1"
+                    title="My ads 3"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
                   <iframe

@@ -218,8 +218,7 @@ const SEO = props => {
       {/* Google Adsense Ads */}
       {
           <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-          </script>
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js" />
 
       }
       
