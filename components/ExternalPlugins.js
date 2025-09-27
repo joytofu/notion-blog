@@ -417,6 +417,7 @@ const ExternalPlugin = props => {
             }}
           />
 
+          {/* Pixomni */}  
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=G-N5K9Y2K2QT`}
@@ -434,6 +435,45 @@ const ExternalPlugin = props => {
               `
             }}
           />
+
+            {/* Yesterdayly */}
+            <script 
+              async 
+              src={`https://www.googletagmanager.com/gtag/js?id=G-V6R971036X`} 
+            />
+            <script
+                async
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-V6R971036X');
+              `
+            }}
+            />
+
+            {/* Rtrro */}  
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=G-E3ZVG4PJHP`}
+            />
+            <script
+              async
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+                  gtag('config', 'G-E3ZVG4PJHP', {
+                    page_path: window.location.pathname,
+                  }); 
+                `
+              }}
+            />
+
+              
         </>
       )}
 
