@@ -409,24 +409,52 @@ const LayoutSlug = props => {
 
                 <div>
                   <iframe
-                    src="/my-ads.html"
+                    src="/my-ads-sapkr.html"
                     width="1%"
                     height="1"
-                    title="My ads"
+                    title="My ads sapkr"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
                   <iframe
-                    src="/my-ads-2.html"
+                    src="/my-ads-pixomni.html"
                     width="1%"
                     height="1"
-                    title="My ads 2"
+                    title="My ads pixomni"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
                   <iframe
-                    src="/my-ads-3.html"
+                    src="/my-ads-netkittop.html"
                     width="1%"
                     height="1"
-                    title="My ads 3"
+                    title="My ads netkit top"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-sapkrtop.html"
+                    width="1%"
+                    height="1"
+                    title="sapkr top"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-uvvim.html"
+                    width="1%"
+                    height="1"
+                    title="uvv.im"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-vetratop.html"
+                    width="1%"
+                    height="1"
+                    title="vetra top"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-mktspy.html"
+                    width="1%"
+                    height="1"
+                    title="mktspy"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
                   <iframe
