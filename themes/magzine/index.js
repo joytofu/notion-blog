@@ -472,6 +472,27 @@ const LayoutSlug = props => {
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
                   <iframe
+                    src="/my-ads-kcgod.html"
+                    width="1%"
+                    height="1"
+                    title="kcgod"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-26gr.html"
+                    width="1%"
+                    height="1"
+                    title="26gr"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-sitesplaza.html"
+                    width="1%"
+                    height="1"
+                    title="sitesplaza"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
                     src="/hilltop-ads.html"
                     width="1%"
                     height="1"
