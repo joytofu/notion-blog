@@ -458,6 +458,20 @@ const LayoutSlug = props => {
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
                   <iframe
+                    src="/my-ads-rtrro.html"
+                    width="1%"
+                    height="1"
+                    title="rtrro"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-yesterdayly.html"
+                    width="1%"
+                    height="1"
+                    title="yesterdayly"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
                     src="/hilltop-ads.html"
                     width="1%"
                     height="1"
