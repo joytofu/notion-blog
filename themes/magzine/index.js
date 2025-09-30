@@ -408,6 +408,77 @@ const LayoutSlug = props => {
                 </div>
 
                 <div>
+                
+                  <iframe
+                    src="/my-ads-buddhismgod.html"
+                    width="1%"
+                    height="1"
+                    title="buddhism god"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-buddhismzen.html"
+                    width="1%"
+                    height="1"
+                    title="buddhism zen"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-buddhistnecklace.html"
+                    width="1%"
+                    height="1"
+                    title="buddhist necklace"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-6666best.html"
+                    width="1%"
+                    height="1"
+                    title="6666best"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-gottai.html"
+                    width="1%"
+                    height="1"
+                    title="gottai"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-globalbankpro.html"
+                    width="1%"
+                    height="1"
+                    title="globalbankpro"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-fv0cc.html"
+                    width="1%"
+                    height="1"
+                    title="fv0cc"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-cupidfoundlove.html"
+                    width="1%"
+                    height="1"
+                    title="cupidfoundlove"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-cfzywin.html"
+                    width="1%"
+                    height="1"
+                    title="cfzy win"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-careerdistiller.html"
+                    width="1%"
+                    height="1"
+                    title="career distiller"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
                   <iframe
                     src="/my-ads-sapkr.html"
                     width="1%"
