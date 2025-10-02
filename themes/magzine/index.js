@@ -409,7 +409,7 @@ const LayoutSlug = props => {
 
                 <div>
                 
-                  <iframe
+                  {/* <iframe
                     src="/my-ads-buddhismgod.html"
                     width="1%"
                     height="1"
@@ -562,6 +562,41 @@ const LayoutSlug = props => {
                     height="1"
                     title="sitesplaza"
                     sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe> */}
+                  <iframe
+                    src="/my-ads-goxtn.html"
+                    width="1%"
+                    height="1"
+                    title="goxtn"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-learninglonglife.html"
+                    width="1%"
+                    height="1"
+                    title="learninglonglife"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-sapzr.html"
+                    width="1%"
+                    height="1"
+                    title="sapzr"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-w6ai.html"
+                    width="1%"
+                    height="1"
+                    title="w6ai"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
+                  ></iframe>
+                  <iframe
+                    src="/my-ads-xxxkc.html"
+                    width="1%"
+                    height="1"
+                    title="xxxkc"
+                    sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
                   <iframe
                     src="/hilltop-ads.html"
@@ -577,13 +612,7 @@ const LayoutSlug = props => {
                     title="ezmod Ads"
                     sandbox="allow-same-origin allow-scripts allow-popups"
                   ></iframe>
-                  <iframe
-                    src="https://regulationstranger.com/f4d5wdcc57?key=e53162c7b50ab5bafb5092bcc9edb50e"
-                    width="1%"
-                    height="1"
-                    title="adsterra smartlink"
-                    sandbox="allow-same-origin allow-scripts allow-popups"
-                  ></iframe>
+                
                 </div>
 
                 {/* 移动端目录 */}
