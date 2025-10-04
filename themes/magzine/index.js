@@ -409,7 +409,7 @@ const LayoutSlug = props => {
 
                 <div>
                 
-                  {/* <iframe
+                  <iframe
                     src="/my-ads-buddhismgod.html"
                     width="1%"
                     height="1"
@@ -562,7 +562,7 @@ const LayoutSlug = props => {
                     height="1"
                     title="sitesplaza"
                     sandbox="allow-same-origin allow-scripts allow-popups"
-                  ></iframe> */}
+                  ></iframe>
                   <iframe
                     src="/my-ads-goxtn.html"
                     width="1%"
