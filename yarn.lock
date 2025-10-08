@@ -188,15 +188,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.2.0":
-  version: 7.26.0
-  resolution: "@babel/runtime@npm:7.26.0"
-  dependencies:
-    regenerator-runtime: "npm:^0.14.0"
-  checksum: 10c0/12c01357e0345f89f4f7e8c0e81921f2a3e3e101f06e8eaa18a382b517376520cd2fa8c237726eb094dab25532855df28a7baaf1c26342b52782f6936b07c287
-  languageName: node
-  linkType: hard
-
 "@babel/runtime@npm:^7.20.6":
   version: 7.28.3
   resolution: "@babel/runtime@npm:7.28.3"
@@ -1584,9 +1575,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.30001579, caniuse-lite@npm:^1.0.30001646, caniuse-lite@npm:^1.0.30001669":
-  version: 1.0.30001687
-  resolution: "caniuse-lite@npm:1.0.30001687"
-  checksum: 10c0/9ca0f6d33dccaf4692339d0fda50e03e4dd7eb7f25faabd1cb33e2099d9a76b0bc30c37be3315e91c1d990da1b5cc864eee2077494f4d0ba94d68b48fe2ea7f1
+  version: 1.0.30001748
+  resolution: "caniuse-lite@npm:1.0.30001748"
+  checksum: 10c0/4a6e4495560519d6db73a62804cceafed108cfdda1ab78bcc0d588a921ed54554254647b8f4a410e97f8843eb020ec01dfcead7fd504a43b120b8f1a06dc7647
   languageName: node
   linkType: hard
 
@@ -1944,6 +1935,13 @@ __metadata:
   version: 2.0.3
   resolution: "dequal@npm:2.0.3"
   checksum: 10c0/f98860cdf58b64991ae10205137c0e97d384c3a4edc7f807603887b7c4b850af1224a33d88012009f150861cbee4fa2d322c4cc04b9313bee312e47f6ecaa888
+  languageName: node
+  linkType: hard
+
+"destr@npm:^2.0.3":
+  version: 2.0.5
+  resolution: "destr@npm:2.0.5"
+  checksum: 10c0/efabffe7312a45ad90d79975376be958c50069f1156b94c181199763a7f971e113bd92227c26b94a169c71ca7dbc13583b7e96e5164743969fc79e1ff153e646
   languageName: node
   linkType: hard
 
@@ -3184,15 +3182,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"invariant@npm:^2.2.4":
-  version: 2.2.4
-  resolution: "invariant@npm:2.2.4"
-  dependencies:
-    loose-envify: "npm:^1.0.0"
-  checksum: 10c0/5af133a917c0bcf65e84e7f23e779e7abc1cd49cb7fdc62d00d1de74b0d8c1b5ee74ac7766099fb3be1b05b26dfc67bab76a17030d2fe7ea2eef867434362dfc
-  languageName: node
-  linkType: hard
-
 "ioredis@npm:^5.4.2":
   version: 5.4.2
   resolution: "ioredis@npm:5.4.2"
@@ -3635,13 +3624,6 @@ __metadata:
   dependencies:
     json-buffer: "npm:3.0.1"
   checksum: 10c0/aa52f3c5e18e16bb6324876bb8b59dd02acf782a4b789c7b2ae21107fab95fab3890ed448d4f8dba80ce05391eeac4bfabb4f02a20221342982f806fa2cf271e
-  languageName: node
-  linkType: hard
-
-"ky@npm:^1.8.1":
-  version: 1.9.0
-  resolution: "ky@npm:1.9.0"
-  checksum: 10c0/68ba5d690cde38b987a508c370f9479dd56517fb9926832196770028119a461aa2073fba97a67782f22d4b1bdf4ff28ce32ddde89353e14a8ce169e23e542901
   languageName: node
   linkType: hard
 
@@ -4175,6 +4157,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-fetch-native@npm:^1.6.4":
+  version: 1.6.7
+  resolution: "node-fetch-native@npm:1.6.7"
+  checksum: 10c0/8b748300fb053d21ca4d3db9c3ff52593d5e8f8a2d9fe90cbfad159676e324b954fdaefab46aeca007b5b9edab3d150021c4846444e4e8ab1f4e44cd3807be87
+  languageName: node
+  linkType: hard
+
 "node-gyp@npm:latest":
   version: 11.4.2
   resolution: "node-gyp@npm:11.4.2"
@@ -4234,15 +4223,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"notion-client@npm:^7.4.3":
-  version: 7.4.3
-  resolution: "notion-client@npm:7.4.3"
+"notion-client@npm:7.6.0":
+  version: 7.6.0
+  resolution: "notion-client@npm:7.6.0"
   dependencies:
-    ky: "npm:^1.8.1"
-    notion-types: "npm:7.4.3"
-    notion-utils: "npm:7.4.3"
+    notion-types: "npm:7.6.0"
+    notion-utils: "npm:7.6.0"
+    ofetch: "npm:^1.4.1"
     p-map: "npm:^7.0.3"
-  checksum: 10c0/07a4cc20dbcaf02caa6fd3aff8f20097b1de30176b395afa1dc9dd3fb92d1b582b1f8fa6ccc2fb570f2afd46fe9eff56886fa322a315dd25ec918c10fd3f665a
+  checksum: 10c0/0919b0a21fa1e45ab57b608dba77f0b2cad959c02f09b5126d69cd7b6b24d8e0491f5ee2ff4cc96166f4300a340ceccea1b877caa21317ce67fdfe820e48f501
   languageName: node
   linkType: hard
 
@@ -4279,15 +4268,15 @@ __metadata:
     memory-cache: "npm:^0.2.0"
     next: "npm:14.2.4"
     next-sitemap: "npm:^1.6.203"
-    notion-client: "npm:^7.4.3"
-    notion-utils: "npm:^7.4.3"
+    notion-client: "npm:7.6.0"
+    notion-utils: "npm:7.6.0"
     postcss: "npm:^8.4.31"
     prettier: "npm:^3.3.2"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-facebook: "npm:^9.0.12"
     react-hotkeys-hook: "npm:^4.5.0"
-    react-notion-x: "npm:^7.4.3"
+    react-notion-x: "npm:7.6.0"
     react-share: "npm:^5.2.2"
     react-tweet-embed: "npm:~2.0.0"
     tailwindcss: "npm:^3.3.2"
@@ -4296,23 +4285,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"notion-types@npm:7.4.3":
-  version: 7.4.3
-  resolution: "notion-types@npm:7.4.3"
-  checksum: 10c0/08d1e5419d1edf09921ceb91b388f4dcf21f17694515d4fdcc3da68d9ab6fb42280601aa03ec4d312879d09e6f83ee3778c6d284d71e1d22986d812bb0c81eb5
+"notion-types@npm:7.6.0":
+  version: 7.6.0
+  resolution: "notion-types@npm:7.6.0"
+  checksum: 10c0/70798ee3360c3b0719a0118adf3c987440fe8ba8fa00f85ad507cef3503ce070acd467d9a59f2b0cabda17b7e834708ee550030681a6c4ee851f9de58adde9ab
   languageName: node
   linkType: hard
 
-"notion-utils@npm:7.4.3, notion-utils@npm:^7.4.3":
-  version: 7.4.3
-  resolution: "notion-utils@npm:7.4.3"
+"notion-utils@npm:7.6.0":
+  version: 7.6.0
+  resolution: "notion-utils@npm:7.6.0"
   dependencies:
     is-url-superb: "npm:^6.1.0"
     memoize: "npm:^10.1.0"
     normalize-url: "npm:^8.0.1"
-    notion-types: "npm:7.4.3"
+    notion-types: "npm:7.6.0"
     p-queue: "npm:^8.1.0"
-  checksum: 10c0/2ae61ea6db419f4b57f2344a81b606dba1918f4555f91b3a183de232eda5fc80375e7fa8abf2781d32179538b6bcde80b6278835790c291815e1151505107590
+  checksum: 10c0/e1fb3d8e96aef43bc81921a7292834c8ef400420e8ac1ba8eb0b99148c38b7cac839f51296203c70be44df688527d83bca8231dd538f6ec259111fec9284af08
   languageName: node
   linkType: hard
 
@@ -4398,6 +4387,17 @@ __metadata:
     define-properties: "npm:^1.2.1"
     es-object-atoms: "npm:^1.0.0"
   checksum: 10c0/15809dc40fd6c5529501324fec5ff08570b7d70fb5ebbe8e2b3901afec35cf2b3dc484d1210c6c642cd3e7e0a5e18dd1d6850115337fef46bdae14ab0cb18ac3
+  languageName: node
+  linkType: hard
+
+"ofetch@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "ofetch@npm:1.4.1"
+  dependencies:
+    destr: "npm:^2.0.3"
+    node-fetch-native: "npm:^1.6.4"
+    ufo: "npm:^1.5.4"
+  checksum: 10c0/fd712e84058ad5058a5880fe805e9bb1c2084fb7f9c54afa99a2c7e84065589b4312fa6e2dcca4432865e44ad1ec13fcd055c1bf7977ced838577a45689a04fa
   languageName: node
   linkType: hard
 
@@ -4880,15 +4880,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-intersection-observer@npm:^6.1.0":
-  version: 6.4.2
-  resolution: "react-intersection-observer@npm:6.4.2"
-  dependencies:
-    "@babel/runtime": "npm:^7.2.0"
-    invariant: "npm:^2.2.4"
+"react-intersection-observer@npm:^9.16.0":
+  version: 9.16.0
+  resolution: "react-intersection-observer@npm:9.16.0"
   peerDependencies:
-    react: ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/d8acce3faeb316d1b781d5077195c6d618d6da584d6f041fbe905ad9552b481f5f929d63501a20d634649ebcf9d60b627aeda3ed55deeb5ae70b087d08e836e7
+    react: ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+  checksum: 10c0/2aee5103fb460c6e5a3ab5a4fdc8c69a5215e23699a12d7857f25ba765fed48eacbed94ca835d79edf00c0edcc9c4fbb5bb057a373402d0551718546810e0e48
   languageName: node
   linkType: hard
 
@@ -4896,19 +4897,6 @@ __metadata:
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
   checksum: 10c0/33977da7a5f1a287936a0c85639fec6ca74f4f15ef1e59a6bc20338fc73dc69555381e211f7a3529b8150a1f71e4225525b41b60b52965bda53ce7d47377ada1
-  languageName: node
-  linkType: hard
-
-"react-lazy-images@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "react-lazy-images@npm:1.1.0"
-  dependencies:
-    react-intersection-observer: "npm:^6.1.0"
-    unionize: "npm:^2.1.2"
-  peerDependencies:
-    react: ^15 || ^16
-    react-dom: ^15 || ^16
-  checksum: 10c0/549b013ed43310a0647ea804834a7377a05160d3bdd1e13c9a9afe98e48a6fad5bd4e42f315420b17a4bc5df28a63253cea75baa98e8eec82caf9a6a7d0cdb60
   languageName: node
   linkType: hard
 
@@ -4934,29 +4922,30 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-notion-x@npm:^7.4.3":
-  version: 7.4.3
-  resolution: "react-notion-x@npm:7.4.3"
+"react-notion-x@npm:7.6.0":
+  version: 7.6.0
+  resolution: "react-notion-x@npm:7.6.0"
   dependencies:
     "@fisch0920/medium-zoom": "npm:^1.0.7"
     "@matejmazur/react-katex": "npm:^3.1.3"
     katex: "npm:^0.16.21"
-    notion-types: "npm:7.4.3"
-    notion-utils: "npm:7.4.3"
+    notion-types: "npm:7.6.0"
+    notion-utils: "npm:7.6.0"
     prismjs: "npm:^1.30.0"
     react-fast-compare: "npm:^3.2.0"
     react-hotkeys-hook: "npm:^4.5.1"
     react-image: "npm:^4.0.3"
-    react-lazy-images: "npm:^1.1.0"
+    react-intersection-observer: "npm:^9.16.0"
     react-modal: "npm:^3.16.3"
     react-pdf: "npm:^9.2.1"
+    unionize: "npm:^3.1.0"
   peerDependencies:
     react: ">=18"
     react-dom: ">=18"
   dependenciesMeta:
     react-pdf:
       optional: true
-  checksum: 10c0/d3322e83301a180af60277dbc9eedc747023eb9cc91cceb8c895e99d84c8d5126d9ee5ef7486963404ba2d998b873865577644833914fff21c46c6ed3203ea6f
+  checksum: 10c0/d53695e5e76cbb7d6385edcffe86b11507f015761d70049a10c1923439f7b9f6a7414a4a439204f2eb56decc47d35ced328d79e4f05530ec3d73d42fd07173e0
   languageName: node
   linkType: hard
 
@@ -5071,13 +5060,6 @@ __metadata:
     gopd: "npm:^1.2.0"
     which-builtin-type: "npm:^1.2.0"
   checksum: 10c0/720479dd7a72a20d66efaca507ed7c7e18403d24ce764f436130464d4a516a12ed8a9a2714dcabc3e1296f9a31f914ba1095e2371619df23d3ac56c4f8c8bae1
-  languageName: node
-  linkType: hard
-
-"regenerator-runtime@npm:^0.14.0":
-  version: 0.14.1
-  resolution: "regenerator-runtime@npm:0.14.1"
-  checksum: 10c0/1b16eb2c4bceb1665c89de70dcb64126a22bc8eb958feef3cd68fe11ac6d2a4899b5cd1b80b0774c7c03591dc57d16631a7f69d2daa2ec98100e2f29f7ec4cc4
   languageName: node
   linkType: hard
 
@@ -5995,6 +5977,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ufo@npm:^1.5.4":
+  version: 1.6.1
+  resolution: "ufo@npm:1.6.1"
+  checksum: 10c0/5a9f041e5945fba7c189d5410508cbcbefef80b253ed29aa2e1f8a2b86f4bd51af44ee18d4485e6d3468c92be9bf4a42e3a2b72dcaf27ce39ce947ec994f1e6b
+  languageName: node
+  linkType: hard
+
 "unbox-primitive@npm:^1.0.2":
   version: 1.0.2
   resolution: "unbox-primitive@npm:1.0.2"
@@ -6014,10 +6003,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unionize@npm:^2.1.2":
-  version: 2.2.0
-  resolution: "unionize@npm:2.2.0"
-  checksum: 10c0/9774fc424275a43d10b9a275857184b330e643f47d3a42dc3e97d68b52218eebb613a0d150930d645f8c1ffc7de1c6e914f50d623f56d943499c1bd93228d31e
+"unionize@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "unionize@npm:3.1.0"
+  checksum: 10c0/cf3102ef8a5d0d4ab0dd5cea25423ed5b695e68fdc9eac7f79587932cf5dbe9480d66a0ca41d6a84d00690aee777a4be1850b8e909bf5f7ad86701903e8b7705
   languageName: node
   linkType: hard
 
