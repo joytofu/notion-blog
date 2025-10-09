@@ -2,6 +2,7 @@
 
 const BLOG = {
   // Important page_id！！！Duplicate Template from  https://www.notion.so/tanghh/02ab3b8678004aa69e9e415905ef32a5
+  API_BASE_URL: process.env.API_BASE_URL || 'https://kcswag.notion.site/api/v3',
   NOTION_PAGE_ID:
     process.env.NOTION_PAGE_ID ||
     '259b5dc8d07480a989f9c5bb752feaed',
