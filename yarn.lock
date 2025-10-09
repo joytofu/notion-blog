@@ -4223,7 +4223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"notion-client@npm:7.6.0":
+"notion-client@npm:^7.6.0":
   version: 7.6.0
   resolution: "notion-client@npm:7.6.0"
   dependencies:
@@ -4268,15 +4268,15 @@ __metadata:
     memory-cache: "npm:^0.2.0"
     next: "npm:14.2.4"
     next-sitemap: "npm:^1.6.203"
-    notion-client: "npm:7.6.0"
-    notion-utils: "npm:7.6.0"
+    notion-client: "npm:^7.6.0"
+    notion-utils: "npm:^7.6.0"
     postcss: "npm:^8.4.31"
     prettier: "npm:^3.3.2"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-facebook: "npm:^9.0.12"
     react-hotkeys-hook: "npm:^4.5.0"
-    react-notion-x: "npm:7.6.0"
+    react-notion-x: "npm:^7.6.0"
     react-share: "npm:^5.2.2"
     react-tweet-embed: "npm:~2.0.0"
     tailwindcss: "npm:^3.3.2"
@@ -4292,7 +4292,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"notion-utils@npm:7.6.0":
+"notion-utils@npm:7.6.0, notion-utils@npm:^7.6.0":
   version: 7.6.0
   resolution: "notion-utils@npm:7.6.0"
   dependencies:
@@ -4922,7 +4922,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-notion-x@npm:7.6.0":
+"react-notion-x@npm:^7.6.0":
   version: 7.6.0
   resolution: "react-notion-x@npm:7.6.0"
   dependencies:
