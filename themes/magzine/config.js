@@ -84,7 +84,7 @@ const CONFIG = {
       name: 'CONTACT US',
       menus: [
         {
-          title: 'Have a question or need help? Email us at support@sapkr.com',
+          title: 'Have a question or need help? Email us at support@pixomni.com',
           href: '/'
         },
         
