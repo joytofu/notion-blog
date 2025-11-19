@@ -222,33 +222,11 @@ const SEO = props => {
 
       }
 
-      {/* Mediavine Journey Grow Verification */}
-      (
-
-        <script data-grow-initializer="" type="text/javascript"
-                              dangerouslySetInnerHTML={{
-                                  __html: `
-                                      !(function(){window.growMe||((window.growMe=function(e){window.growMe._.push(e);}),(window.growMe._=[]));var e=document.createElement("script");(e.type="text/javascript"),(e.src="https://faves.grow.me/main.js"),(e.defer=!0),e.setAttribute("data-grow-faves-site-id","U2l0ZTo5ODNlYzc0My01MjgxLTQzNzQtOGM1Ny0xYWY2M2JiZjMzMzk=");var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t);})();
-                                  `
-                                }}
-                          />
-      )
-
-      {/* Ezoic Verification */}
-      (
-        <script src="https://cmp.gatekeeperconsent.com/min.js" data-cfasync="false" />
-        <script src="https://the.gatekeeperconsent.com/cmp.min.js" data-cfasync="false" />
-
-        <script async src="//www.ezojs.com/ezoic/sa.min.js" />
-        <script type="text/javascript"
-                              dangerouslySetInnerHTML={{
-                                  __html: `
-                                      window.ezstandalone = window.ezstandalone || {};
-            ezstandalone.cmd = ezstandalone.cmd || [];
-                                  `
-                                }}
-                          />
-      )
+      {/* Monumetric */}
+      {
+        <script async type="text/javascript" src="//monu.delivery/site/4/f/e6abfc-7c19-4e75-af09-b54c45691eb7.js" data-cfasync="false" />
+      }
+    
       
       {children}
       
