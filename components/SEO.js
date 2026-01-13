@@ -210,10 +210,6 @@ const SEO = props => {
         <meta name="google-adsense-account" content="ca-pub-7589306191208119" />
       )
 
-      {/* Partnerboost Verification */}
-      (
-        <meta name="partnerboostverifycode" content="32dc01246faccb7f5b3cad5016dd5033" />
-      )
 
       {/* Google Adsense Ads */}
       {
@@ -223,9 +219,9 @@ const SEO = props => {
       }
 
       {/* Monumetric */}
-      {
+      {/* {
         <script async type="text/javascript" src="//monu.delivery/site/4/f/e6abfc-7c19-4e75-af09-b54c45691eb7.js" data-cfasync="false" />
-      }
+      } */}
     
       
       {children}
