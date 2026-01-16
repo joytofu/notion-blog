@@ -212,16 +212,15 @@ const SEO = props => {
 
 
       {/* Google Adsense Ads */}
-      {
+      {/* {
           <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js" />
-
-      }
+      } */}
 
       {/* Monumetric */}
-      {/* {
+      {
         <script async type="text/javascript" src="//monu.delivery/site/4/f/e6abfc-7c19-4e75-af09-b54c45691eb7.js" data-cfasync="false" />
-      } */}
+      }
     
       
       {children}
