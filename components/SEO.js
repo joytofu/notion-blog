@@ -210,6 +210,11 @@ const SEO = props => {
         <meta name="google-adsense-account" content="ca-pub-7589306191208119" />
       )
 
+      {/* CE Verification */}
+      (
+        <meta name="verify-convergexperts" content="9992af219c6a" />
+      )
+
 
       {/* Google Adsense Ads */}
       {/* {
